@@ -1,0 +1,20 @@
+Installation of X2 is fairly simple. 
+Please follow the steps below and have fun:
+
+1. In the ./app/Config/Schema/ directory load the schema.sql file into your Database. 
+You can use PhpMyAdmin, the command line client or any other tool you like. This step
+requires you have a working database server and a blank database.  
+
+2. Open the ./app/Config/database.php file and set your database settings
+
+3. Open the ./app/Config/core.php and change Configure::write('debug', 0); to Configure::write('debug', 2);
+
+4. visit http://yoursitehere.com/x2/pages/requirements and see if you meet all of the requirements.
+
+5. Fix any problems with your installation and once your ready change Configure::write('debug', 2); back to 0
+
+6. visit http://yoursitehere.com/x2/users/register and register the first account.
+The first user is automatically made an admin. 
+
+7. Create some albums, upload some photos and if you're ready to integrate please see an example 
+   at ./app/view/Themed/Embedded/Photos/integration.html

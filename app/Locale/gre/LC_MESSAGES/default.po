@@ -1,0 +1,1539 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright 2012 Aris <aris@deepspacehosting.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-06-12 09:16+0000\n"
+"PO-Revision-Date: 2012-06-19 18:27+0700\n"
+"Last-Translator: Aris <aris@deepspacehosting.com>\n"
+"Language-Team: X2 <x2@arisx2.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: Controller/AlbumsController.php:46
+#: Plugin/Admin/Controller/AlbumsController.php:41
+#: Plugin/Admin/View/Albums/add.ctp:3
+#: Plugin/Admin/View/Albums/edit.ctp:3
+#: Plugin/Admin/View/Albums/index.ctp:2;7
+#: Plugin/Admin/View/Albums/tree.ctp:5
+#: Plugin/Admin/View/Albums/view.ctp:2
+#: Plugin/Admin/View/Elements/admin_menu.ctp:7
+#: Plugin/Admin/View/Layouts/crop.ctp:56
+#: Plugin/Admin/View/Layouts/default.ctp:56
+#: Plugin/Admin/View/Pages/index.ctp:2;7
+#: Plugin/Admin/View/Photos/colorbox.ctp:4
+#: Plugin/Admin/View/Photos/details.ctp:2
+#: Plugin/Admin/View/Photos/slideshow.ctp:2
+#: Plugin/Admin/View/Photos/view.ctp:33
+#: View/Albums/index.ctp:2;11
+#: View/Albums/tree.ctp:6
+#: View/Albums/view.ctp:2
+#: View/Elements/menu.ctp:7
+#: View/Elements/navigation.ctp:9
+#: View/Photos/colorbox.ctp:4
+#: View/Photos/details.ctp:2
+#: View/Photos/slideshow.ctp:2
+#: View/Photos/view.ctp:34
+msgid "Albums"
+msgstr "Άλμπουμ"
+
+#: Controller/AlbumsController.php:80
+#: Plugin/Admin/Controller/AlbumsController.php:241
+#: Plugin/Admin/Controller/PhotosController.php:294
+msgid "Invalid Album"
+msgstr "Λάθος Άλμπουμ"
+
+#: Controller/AlbumsController.php:85
+#: Plugin/Admin/Controller/AlbumsController.php:246;304
+#: Plugin/Admin/View/Albums/view.ctp:10
+#: Plugin/Admin/View/Photos/details.ctp:94
+#: Plugin/Admin/View/Photos/edit.ctp:32
+#: View/Albums/view.ctp:10
+#: View/Photos/details.ctp:87
+msgid "Album"
+msgstr "Άλμπουμ"
+
+#: Controller/AlbumsController.php:91
+#: Plugin/Admin/Controller/AlbumsController.php:81
+#: Plugin/Admin/View/Albums/tree.ctp:6;13
+#: Plugin/Admin/View/Elements/album_menu.ctp:9
+#: View/Albums/tree.ctp:7;13
+#: View/Elements/navigation.ctp:10
+msgid "Album Tree"
+msgstr "Δέντρο άλμπουμ"
+
+#: Controller/PagesController.php:19
+msgid "Pages"
+msgstr "Σελίδες"
+
+#: Controller/PagesController.php:39
+#: Plugin/Admin/Controller/PagesController.php:18
+#: View/Elements/menu.ctp:6
+#: View/Elements/navigation.ctp:8
+msgid "Home"
+msgstr "Αρχική Σελίδα"
+
+#: Controller/PagesController.php:49;54
+#: Controller/UsersController.php:73
+msgid "Page Not Found"
+msgstr "Η σελίδα δεν βρέθηκε"
+
+#: Controller/PagesController.php:67
+msgid "The form you tried to submit has expired. Please go back, refresh the page and try again"
+msgstr "Η Φόρμα αυτή έχει λήχει. Παρακαλώ πατήστε το πίσω κουμπί"
+
+#: Controller/PhotosController.php:39
+#: Plugin/Admin/Controller/PhotosController.php:33
+#: Plugin/Admin/View/Albums/view.ctp:58
+#: Plugin/Admin/View/Elements/admin_menu.ctp:8
+#: Plugin/Admin/View/Layouts/crop.ctp:57
+#: Plugin/Admin/View/Layouts/default.ctp:57
+#: Plugin/Admin/View/Photos/duplicates.ctp:2
+#: Plugin/Admin/View/Photos/identical.ctp:2
+#: Plugin/Admin/View/Photos/index.ctp:2;9
+#: Plugin/Admin/View/Photos/search.ctp:2;37
+#: View/Albums/view.ctp:58
+#: View/Elements/menu.ctp:8
+#: View/Photos/index.ctp:2;8
+#: View/Photos/search.ctp:3;36
+#: View/Themed/Embedded/Albums/view.ctp:4
+msgid "Photos"
+msgstr "Φωτογραφίες"
+
+#: Controller/PhotosController.php:69
+#: Plugin/Admin/Controller/PhotosController.php:54
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:14
+#: View/Elements/navigation.ctp:12
+msgid "Search Photos"
+msgstr "Αναζήτηση Φωτοφραφιών"
+
+#: Controller/PhotosController.php:100;158;179;276;297
+#: Plugin/Admin/Controller/PhotosController.php:70;90;139;158;237;256;362;408;433;470
+msgid "Invalid Photo"
+msgstr "Λάθος Φωτογραφία"
+
+#: Controller/PhotosController.php:154
+#: Controller/UsersController.php:144
+#: Plugin/Admin/Controller/PhotosController.php:135
+#: Plugin/Admin/Controller/UsersController.php:78;112
+#: Plugin/Admin/View/Albums/index.ctp:65
+#: Plugin/Admin/View/Albums/view.ctp:111
+#: Plugin/Admin/View/Pages/index.ctp:60
+#: Plugin/Admin/View/Photos/identical.ctp:56
+#: Plugin/Admin/View/Photos/index.ctp:62
+#: Plugin/Admin/View/Users/index.ctp:59
+msgid "View"
+msgstr "Δείτε"
+
+#: Controller/PhotosController.php:182
+#: Plugin/Admin/Controller/PhotosController.php:161
+#: Plugin/Admin/View/Photos/details.ctp:7
+#: Plugin/Admin/View/Photos/view.ctp:82
+#: View/Photos/details.ctp:7
+#: View/Photos/view.ctp:88
+msgid "Details"
+msgstr "Λεπτομέρειες"
+
+#: Controller/PhotosController.php:205;217;245;257
+#: Plugin/Admin/Controller/PhotosController.php:183;192;212;221
+msgid "Photo not found"
+msgstr "Η Φωτογραφία δεν βρέθηκε"
+
+#: Controller/PhotosController.php:222;261
+#: Plugin/Admin/Controller/PhotosController.php:197;225
+#: Plugin/Admin/View/Elements/photo_menu.ctp:10
+#: Plugin/Admin/View/Photos/slideshow.ctp:5
+#: Plugin/Admin/View/Photos/view.ctp:77
+#: View/Elements/photo_menu.ctp:9
+#: View/Photos/slideshow.ctp:5
+#: View/Photos/view.ctp:83
+msgid "Slideshow"
+msgstr "Σλάιντ σόου"
+
+#: Controller/PhotosController.php:273
+msgid "Permission Denied"
+msgstr "Δεν επιτρέπεται η πρόσβαση"
+
+#: Controller/UsersController.php:22;55
+#: Plugin/Admin/View/Layouts/crop.ctp:75
+#: Plugin/Admin/View/Layouts/default.ctp:75
+#: View/Elements/menu.ctp:9
+#: View/Layouts/default.ctp:63
+#: View/Users/forgot.ctp:17
+#: View/Users/login.ctp:2;6;22
+msgid "Login"
+msgstr "Σύνδεση"
+
+#: Controller/UsersController.php:44
+msgid "Invalid username or password. Please try again"
+msgstr "Λάθος όνομα χρήστη ή κωδικός πρόσβασης. Παρακαλώ δοκιμάστε ξανά."
+
+#: Controller/UsersController.php:51;211;249
+msgid "You are already logged in!"
+msgstr "Είστε ήδη συνδεδεμένος!"
+
+#: Controller/UsersController.php:59
+msgid "You have been successfully logged out."
+msgstr "Έχετε αποσυνδεθεί επιτυχώς"
+
+#: Controller/UsersController.php:88
+msgid "Your configuration table is wrong or corrupt"
+msgstr "Ο πίνακας διαμόρφωσης σας είναι λάθος ή κατεστραμμένος"
+
+#: Controller/UsersController.php:115
+msgid "Account created successfully. Please wait for approval"
+msgstr "Ο λογαριασμός δημιουργήθηκε με επιτυχία. Παρακαλώ περιμένετε για την έγκριση"
+
+#: Controller/UsersController.php:119
+msgid "Account could not be created. Please, try again."
+msgstr "Ο λογαριασμός δεν δημιουργήθηκε. Παρακαλώ, προσπαθήστε ξανά."
+
+#: Controller/UsersController.php:122
+#: View/Users/forgot.ctp:13
+#: View/Users/login.ctp:14
+#: View/Users/register.ctp:2;6;16
+msgid "Register"
+msgstr "Εγγραφή"
+
+#: Controller/UsersController.php:136;162;197
+#: Plugin/Admin/Controller/UsersController.php:74;95;129;157
+msgid "Invalid user"
+msgstr "Λάθος Χρήστης"
+
+#: Controller/UsersController.php:166
+#: Plugin/Admin/Controller/UsersController.php:100
+msgid "The user has been saved"
+msgstr "Ο χρήστης αποθηκεύτηκε με επιτυχία"
+
+#: Controller/UsersController.php:170
+#: Plugin/Admin/Controller/UsersController.php:104
+msgid "The user could not be saved. Please, try again."
+msgstr "Ο χρήστης δεν αποθηκεύτηκε. Παρακαλώ, προσπαθήστε ξανά."
+
+#: Controller/UsersController.php:176
+#: Plugin/Admin/Controller/PagesController.php:118
+#: Plugin/Admin/Controller/PhotosController.php:345
+#: Plugin/Admin/View/Albums/index.ctp:68
+#: Plugin/Admin/View/Albums/view.ctp:115
+#: Plugin/Admin/View/Pages/index.ctp:63
+#: Plugin/Admin/View/Photos/identical.ctp:60
+#: Plugin/Admin/View/Photos/index.ctp:66
+#: Plugin/Admin/View/Photos/view.ctp:100
+#: Plugin/Admin/View/Users/edit.ctp:4
+#: Plugin/Admin/View/Users/index.ctp:62
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: Controller/UsersController.php:200
+#: Plugin/Admin/Controller/UsersController.php:136
+msgid "User deleted"
+msgstr "Ο Χρήστης διαγράφτηκε"
+
+#: Controller/UsersController.php:203
+#: Plugin/Admin/Controller/UsersController.php:139
+msgid "User was not deleted"
+msgstr "Ο Χρήστης δεν διαγράφτηκε"
+
+#: Controller/UsersController.php:243
+msgid "Password reset instructions have been sent to your email"
+msgstr "Οδηγίες επαναφοράς κωδικού έχουν αποσταλεί στο e-mail σας"
+
+#: Controller/UsersController.php:245
+#: View/Users/forgot.ctp:2;6
+msgid "Password Recovery"
+msgstr "Ανάκτηση κωδικού"
+
+#: Controller/UsersController.php:263
+msgid "You have successfully changed your password"
+msgstr "Έχετε επιτυχώς αλλάξει τον κωδικό σας"
+
+#: Controller/UsersController.php:269
+msgid "Invalid credentials"
+msgstr "Άκυρα διαπιστευτήριa"
+
+#: Controller/UsersController.php:273;298
+#: View/Users/reset.ctp:2
+msgid "Password Reset"
+msgstr "Επαναφορά κωδικού"
+
+#: Controller/UsersController.php:284
+msgid "Incorrect Password"
+msgstr "Λάθος κωδικός πρόσβασης"
+
+#: Controller/UsersController.php:291
+msgid "Password Updated Successfully"
+msgstr "Ο κωδικός πρόσβασης ενημερώθηκε επιτυχώς"
+
+#: Controller/UsersController.php:294
+msgid "Error! Could not Update Password"
+msgstr "Σφάλμα! Ο κωδικό πρόσβασης δεν ενημερώθηκε "
+
+#: Model/Album.php:104
+#: Plugin/Admin/Model/Album.php:102
+msgid "Parent id must be numeric"
+msgstr "η Μητρική id πρέπει να είναι αριθμός"
+
+#: Model/Album.php:111
+#: Plugin/Admin/Model/Album.php:109
+msgid "Please select a permission from the list"
+msgstr "Παρακαλώ επιλέξτε μια άδεια από τη λίστα"
+
+#: Model/Album.php:117
+#: Model/Metadata.php:37
+#: Plugin/Admin/Model/Album.php:115
+#: Plugin/Admin/Model/Metadata.php:37
+msgid "Photo id must be numeric"
+msgstr "ID φωτογραφίας πρέπει να είναι αριθμός"
+
+#: Model/Album.php:124
+#: Plugin/Admin/Model/Album.php:122
+msgid "Please enter the name for this album"
+msgstr "Παρακαλώ εισάγετε το όνομα για αυτό το άλμπουμ"
+
+#: Model/Album.php:128
+#: Plugin/Admin/Model/Album.php:126
+msgid "That album name already exists. Please choose another"
+msgstr "Αυτό το όνομα άλμπουμ υπάρχει ήδη. Παρακαλώ επιλέξτε άλλο όνομα"
+
+#: Model/Metadata.php:43
+#: Plugin/Admin/Model/Metadata.php:43
+msgid "Data must not be empty"
+msgstr "Πεδίο Data δεν πρέπει να είναι κενό"
+
+#: Model/Page.php:33
+#: Plugin/Admin/Model/Page.php:34
+msgid "Title cannot by empty"
+msgstr "Πεδίο Title δεν πρέπει να είναι κενό"
+
+#: Model/Page.php:41
+#: Plugin/Admin/Model/Page.php:42
+msgid "HTML Field cannot be empty"
+msgstr "Πεδίο HTML δεν πρέπει να είναι κενό"
+
+#: Model/Photo.php:83
+#: Plugin/Admin/Model/Photo.php:81
+msgid "You must select an Album"
+msgstr "Πρέπει να επιλέξετε ένα άλμπουμ"
+
+#: Model/Photo.php:114
+#: Plugin/Admin/Model/Photo.php:112
+msgid "Title cannot be empty"
+msgstr "Πεδίο Title δεν πρέπει να είναι κενό"
+
+#: Model/Photo.php:120
+#: Plugin/Admin/Model/Photo.php:118
+msgid "Views must be a number"
+msgstr "Πεδίο Views πρέπει να είναι αριθμός"
+
+#: Model/Photo.php:126
+#: Plugin/Admin/Model/Photo.php:124
+msgid "Size must be a number"
+msgstr "Πεδίο Size πρέπει να είναι αριθμός"
+
+#: Model/Photo.php:132
+#: Plugin/Admin/Model/Photo.php:130
+msgid "Width must be a number"
+msgstr "Πεδίο Width πρέπει να είναι αριθμός"
+
+#: Model/Photo.php:138
+#: Plugin/Admin/Model/Photo.php:136
+msgid "Height must be a number"
+msgstr "Πεδίο Height πρέπει να είναι αριθμός"
+
+#: Model/User.php:86
+#: Plugin/Admin/Model/User.php:87
+msgid "Username cannot be empty"
+msgstr "Πεδίο Username δεν πρέπει να είναι κενό"
+
+#: Model/User.php:92
+#: Plugin/Admin/Model/User.php:93
+msgid "That username already exists. Please choose another"
+msgstr "Αυτό το όνομα υπάρχει ήδη. Παρακαλώ επιλέξτε άλλο"
+
+#: Model/User.php:97
+#: Plugin/Admin/Model/User.php:98
+msgid "Username can consist of letters and numbers only"
+msgstr "Όνομα Χρήστη μπορεί να αποτελείται από γράμματα και αριθμούς μόνο"
+
+#: Model/User.php:101
+#: Plugin/Admin/Model/User.php:102
+msgid "Username must be Between 5 and 15 characters"
+msgstr "Όνομα Χρήστη πρέπει να είναι μεταξύ 5 και 15 χαρακτήρων"
+
+#: Model/User.php:107
+#: Plugin/Admin/Model/User.php:108
+msgid "Please use a valid email"
+msgstr "Παρακαλώ εισάγετε ένα έγκυρο e-mail"
+
+#: Model/User.php:111
+#: Plugin/Admin/Model/User.php:112
+msgid "Email cannot be empty"
+msgstr "Πεδίο Email δεν πρέπει να είναι κενό"
+
+#: Model/User.php:115
+#: Plugin/Admin/Model/User.php:116
+msgid "The email you entered has already been registered"
+msgstr "Το e-mail που έχετε εισάγει έχει ήδη καταχωρηθεί"
+
+#: Model/User.php:122
+#: Plugin/Admin/Model/User.php:123
+msgid "Password cannot be empty"
+msgstr "Πεδίο Password δεν πρέπει να είναι κενό"
+
+#: Model/User.php:126;144
+msgid "Password must be a mimimum of 6 characters long"
+msgstr "Ο κωδικός πρόσβασης πρέπει να είναι τουλάχιστον 6 χαρακτήρες"
+
+#: Model/User.php:130;148
+#: Plugin/Admin/Model/User.php:131;149
+msgid "Password must be a maximum of 30 characters long"
+msgstr "Ο κωδικός πρόσβασης πρέπει να είναι ένα μέγιστο μήκος 30 χαρακτήρες"
+
+#: Model/User.php:136
+#: Plugin/Admin/Model/User.php:137
+msgid "Please confirm your password"
+msgstr "Επιβεβαιώστε τον κωδικό σας"
+
+#: Model/User.php:140
+#: Plugin/Admin/Model/User.php:141
+msgid "Passwords must match"
+msgstr "Οι κωδικοί πρόσβασης πρέπει να ταιριάζουν"
+
+#: Model/User.php:159
+#: Plugin/Admin/Model/User.php:160
+msgid "Nickname cannot be empty"
+msgstr "Πεδίο Nickname δεν πρέπει να είναι κενό"
+
+#: Model/User.php:163
+#: Plugin/Admin/Model/User.php:164
+msgid "Nickname can consist of letters and numbers only"
+msgstr "Ψευδώνυμο μπορεί να αποτελείται από γράμματα και αριθμούς μόνο"
+
+#: Plugin/Admin/Controller/AlbumsController.php:67
+msgid "The Album tree has successfully passed verification"
+msgstr "Το δέντρο άλμπουμ έχει περάσει επιτυχώς τον έλεγχο"
+
+#: Plugin/Admin/Controller/AlbumsController.php:75
+msgid "The Album tree has been restructured"
+msgstr "Το δέντρο άλμπουμ έχει αναδιαρθρωθεί"
+
+#: Plugin/Admin/Controller/AlbumsController.php:78
+msgid "There has been an error. You might need to reinstall. Sorry"
+msgstr "Υπήρξε ένα λάθος. Ίσως χρειαστεί να εγκαταστήσετε ξανά. Συγνώμη"
+
+#: Plugin/Admin/Controller/AlbumsController.php:118;287;320
+msgid "Invalid album"
+msgstr "Λάθος Άλμπουμ"
+
+#: Plugin/Admin/Controller/AlbumsController.php:264
+msgid "The album has been saved. Add some pictures"
+msgstr "Το άλμπουμ έχει αποθηκευτεί. Προσθέστε μερικές φωτογραφίες"
+
+#: Plugin/Admin/Controller/AlbumsController.php:268;295
+msgid "The album could not be saved. Please, try again."
+msgstr "Το άλμπουμ δεν αποθηκεύτηκε. Παρακαλώ, προσπαθήστε ξανά."
+
+#: Plugin/Admin/Controller/AlbumsController.php:274
+msgid "Create New Album"
+msgstr "Δημιουργία νέου άλμπουμ"
+
+#: Plugin/Admin/Controller/AlbumsController.php:291
+msgid "The album has been saved"
+msgstr "Το άλμπουμ έχει αποθηκευτεί"
+
+#: Plugin/Admin/Controller/AlbumsController.php:333
+msgid "Could not delete photo with id: %d"
+msgstr "Αδύνατη η διαγραφή φωτογραφιών με id: %d"
+
+#: Plugin/Admin/Controller/AlbumsController.php:339
+msgid "Album deleted"
+msgstr "Άλμπουμ διαγράφτηκε"
+
+#: Plugin/Admin/Controller/AlbumsController.php:342
+msgid "Album was not deleted"
+msgstr "Άλμπουμ δεν διαγράφτηκε"
+
+#: Plugin/Admin/Controller/DashboardController.php:49
+msgid "Cache cleared successfully"
+msgstr "Χώρος προσωρινής αποθήκευσης καθαρίστηκε με επιτυχία"
+
+#: Plugin/Admin/Controller/DashboardController.php:52
+msgid "Could not clear cache. Please try again or manually clean the cache."
+msgstr "Χώρος προσωρινής αποθήκευσης δεν καθαρίστηκε. Παρακαλώ καθαρίστε μόνοι σας το σύστημα αρχείων"
+
+#: Plugin/Admin/Controller/MetadataController.php:16
+msgid "Invalid Photo ID"
+msgstr "Λάθος ID Φωτογραφιας"
+
+#: Plugin/Admin/Controller/MetadataController.php:20
+msgid "EXIF Metadata deleted"
+msgstr "Τα μεταδεδομένα EXIF διαγράφτηκαν"
+
+#: Plugin/Admin/Controller/MetadataController.php:23
+msgid "EXIF Metadata were not deleted"
+msgstr "Τα μεταδεδομένα EXIF δεν διαγράφτηκαν"
+
+#: Plugin/Admin/Controller/PagesController.php:31;85;134;157;191
+msgid "Invalid Page"
+msgstr "Λάθος σελίδα"
+
+#: Plugin/Admin/Controller/PagesController.php:60;107
+msgid "The page has been saved"
+msgstr "Η σελίδα έχει αποθηκεύτηκε"
+
+#: Plugin/Admin/Controller/PagesController.php:64
+msgid "The page could not be saved. Please, try again."
+msgstr "Η σελίδα δεν αποθηκεύτηκε. Παρακαλώ, προσπαθήστε ξανά."
+
+#: Plugin/Admin/Controller/PagesController.php:67
+msgid "Create New Page"
+msgstr "Δημιουργήστε νέα σελίδα"
+
+#: Plugin/Admin/Controller/PagesController.php:111
+msgid "The Page could not be saved. Please, try again."
+msgstr "Η σελίδα δεν αποθηκεύτηκε. Παρακαλώ, προσπαθήστε ξανά."
+
+#: Plugin/Admin/Controller/PagesController.php:137
+msgid "Page deleted"
+msgstr "Σελίδα διαγράφτηκε"
+
+#: Plugin/Admin/Controller/PagesController.php:140
+msgid "Page was not deleted"
+msgstr "Σελίδα δεν διαγράφτηκε"
+
+#: Plugin/Admin/Controller/PagesController.php:161
+msgid "Content Unpublished"
+msgstr "Καταργήθηκε η δημοσίευση αυτής της σελίδας"
+
+#: Plugin/Admin/Controller/PagesController.php:164
+msgid "Content could not be unpublished. Please try again."
+msgstr "Δεν καταργήθηκε η δημοσίευση αυτής της σελίδας. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PagesController.php:169
+msgid "Content Published"
+msgstr "Σελιδα δημοσιεύτηκε"
+
+#: Plugin/Admin/Controller/PagesController.php:172
+msgid "Content could not be published. Please try again."
+msgstr "Σελιδα δεν δημοσιεύτηκε. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PagesController.php:195
+msgid "Content removed from the front page"
+msgstr "Περιεχόμενο αφαιρέθηκε από την πρώτη σελίδα"
+
+#: Plugin/Admin/Controller/PagesController.php:198
+msgid "Content could not be removed from the front page. Please try again."
+msgstr "Περιεχόμενο δεν αφαιρέθηκε από την πρώτη σελίδα. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PagesController.php:203
+msgid "Content promoted to the front page"
+msgstr "Περιεχόμενο προωθήθηκε στην πρώτη σελίδα"
+
+#: Plugin/Admin/Controller/PagesController.php:206
+msgid "Content could not be promoted to the front page. Please try again."
+msgstr "Περιεχόμενο δεν προωθήθηκε στην πρώτη σελίδα. Παρκαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PhotosController.php:315
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:11
+msgid "Upload Photos"
+msgstr "Ανεβάστε Φωτογραφίες"
+
+#: Plugin/Admin/Controller/PhotosController.php:328;443
+msgid "Invalid photo"
+msgstr "Λάθος φωτογραφία"
+
+#: Plugin/Admin/Controller/PhotosController.php:332
+msgid "The photo has been saved"
+msgstr "Η φωτογραφία αποθηκεύτηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:336
+msgid "The photo could not be saved. Please, try again."
+msgstr "Η φωτογραφία δεν αποθηκεύτηκε. Παρακαλώ, δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PhotosController.php:373
+msgid "Photo successfully deleted"
+msgstr "Φωτογραφία διαγράφηκε επιτυχώς"
+
+#: Plugin/Admin/Controller/PhotosController.php:376
+msgid "Could not delete Photo. Please try again"
+msgstr "Φωτογραφία δεν διαγράφηκε. Παρακαλώ δοκιμαστε ξανά"
+
+#: Plugin/Admin/Controller/PhotosController.php:396
+msgid "Album Cover Updated"
+msgstr "Εξώφυλλο του άλμπουμ Ενημερώθηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:399
+msgid "There was an error. Please try again"
+msgstr "Σφάλμα. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PhotosController.php:403
+msgid "No Changes were made"
+msgstr "Οι αλλαγές δεν έγιναν"
+
+#: Plugin/Admin/Controller/PhotosController.php:419
+msgid "Invalid Direction"
+msgstr "Λάθος Κατεύθυνση"
+
+#: Plugin/Admin/Controller/PhotosController.php:426
+msgid "Photo Rotated"
+msgstr "Φωτογραφία περιστράφηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:429
+msgid "Photo could not be rotated. Please try again"
+msgstr "Φωτογραφία δεν περιστράφηκε. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Controller/PhotosController.php:453
+msgid "Photo Cropped"
+msgstr "Φωτογραφία περικόπηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:456
+msgid "Photo could not be cropped."
+msgstr "Φωτογραφία δεν περικόπηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:473
+#: Plugin/Admin/View/Photos/crop.ctp:5;10;23
+#: Plugin/Admin/View/Photos/view.ctp:104
+msgid "Crop"
+msgstr "Περικοπή"
+
+#: Plugin/Admin/Controller/PhotosController.php:484
+msgid "Photo Unpublished"
+msgstr "Φωτογραφία Ανεκδόθηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:487
+msgid "Could Not Unpublish Photo"
+msgstr "Φωτογραφία δεν Ανεκδόθηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:492
+msgid "Photo Published"
+msgstr "Φωτογραφία Εκδόθηκε"
+
+#: Plugin/Admin/Controller/PhotosController.php:495
+msgid "Could Not Publish Photo"
+msgstr "Φωτογραφία δεν Εκδόθηκε"
+
+#: Plugin/Admin/Controller/SettingsController.php:27
+msgid "Your settings have been saved"
+msgstr "Οι ρυθμίσεις σας αποθηκεύτηκαν με επιτυχία"
+
+#: Plugin/Admin/Controller/SettingsController.php:31
+msgid "Could not save settings. Please try again."
+msgstr "Δεν ήταν δυνατή η αποθήκευση των ρυθμίσεων. Παρακαλώ δοκιμάστε ξανά."
+
+#: Plugin/Admin/Controller/SettingsController.php:48
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:16
+#: Plugin/Admin/View/Elements/settings_menu.ctp:7
+#: Plugin/Admin/View/Layouts/crop.ctp:54
+#: Plugin/Admin/View/Layouts/default.ctp:54
+#: Plugin/Admin/View/Settings/index.ctp:11;16
+#: Plugin/Admin/View/Settings/view.ctp:2;7
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: Plugin/Admin/Controller/SettingsController.php:60
+msgid "Application Settings"
+msgstr "Ρυθμίσεις εφαρμογής"
+
+#: Plugin/Admin/Controller/UsersController.php:21
+msgid "User Management"
+msgstr "Διαχείριση χρηστών"
+
+#: Plugin/Admin/Controller/UsersController.php:41
+#: Plugin/Admin/View/Elements/user_menu.ctp:8
+#: Plugin/Admin/View/Users/queue.ctp:3
+msgid "Approval Queue"
+msgstr "Ουρά Έγκρισης"
+
+#: Plugin/Admin/Controller/UsersController.php:52;165
+msgid "User Activated"
+msgstr "Χρήστης Ενεργοποιήθηκε"
+
+#: Plugin/Admin/Controller/UsersController.php:55
+msgid "Could not Activate User"
+msgstr "Χρήστης δεν Ενεργοποιήθηκε"
+
+#: Plugin/Admin/Controller/UsersController.php:132
+msgid "I cannot delete admin users for your own protection"
+msgstr "Δεν μπορώ να διαγράψω τον διαχειριστή χρηστών για τη δική σας προστασία"
+
+#: Plugin/Admin/Controller/UsersController.php:161
+msgid "User Deactivated"
+msgstr "Χρήστης Απενεργοποιήθηκε"
+
+#: Plugin/Admin/Controller/UsersController.php:168
+msgid "User Could not be activated/deactivated. Please try again"
+msgstr "Χρήστης δεν Απενεργοποιήθηκε/Ενεργοποιήθηκε"
+
+#: Plugin/Admin/Model/Page.php:50
+msgid "Slug cannot be empty"
+msgstr "Το Σλάγκ δεν μπορεί να είναι κενό"
+
+#: Plugin/Admin/Model/Perm.php:50
+#: Plugin/Admin/Model/Setting.php:43
+msgid "Name cannot be empty"
+msgstr "Πεδίο Name δεν πρέπει να είναι κενό"
+
+#: Plugin/Admin/Model/Setting.php:49
+msgid "Value cannot be empty"
+msgstr "Πεδίο Value δεν πρέπει να είναι κενό"
+
+#: Plugin/Admin/Model/Setting.php:55
+msgid "Section cannot be empty"
+msgstr "Πεδίο Section δεν πρέπει να είναι κενό"
+
+#: Plugin/Admin/Model/Setting.php:61
+msgid "Type cannot be empty"
+msgstr "Πεδίο Type δεν πρέπει να είναι κενό"
+
+#: Plugin/Admin/Model/User.php:127;145
+msgid "Password must be a minimum of 6 characters long"
+msgstr "Ο κωδικός πρόσβασης πρέπει να είναι τουλάχιστον 6 χαρακτήρες"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:60;356;387
+msgid "Unable to load the photo"
+msgstr "Δεν είναι δυνατή η φόρτωση της φωτογραφίας"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:98
+msgid "Cannot write to the directory. Check your permissions"
+msgstr "Δεν είναι δυνατή η εγγραφή στον φάκελο. Ελέγξτε τα δικαιώματά σας"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:132
+msgid "Error Saving Record"
+msgstr "Σφάλμα εγγραφής"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:141;145
+msgid "Not a File"
+msgstr "Δεν είναι αρχείο"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:163
+msgid "The image exceeds the maximum file size in your configuration"
+msgstr "Η εικόνα ξεπέρασε το μέγιστο μέγεθος αρχείου στις ρυθμίσεις σας"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:166
+msgid "The File was only partially uploaded. Please try again"
+msgstr "Το αρχείο δεν ανέβηκε. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:169
+msgid "No file was uploaded"
+msgstr "Το αρχείο δεν ανέβηκε. Παρακαλώ δοκιμάστε ξανά"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:172
+msgid "There is no temporary folder to place the file on your system"
+msgstr "Δεν υπάρχει προσωρινός φάκελος για να τοποθετήσετε το αρχείο στο σύστημά"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:175
+msgid "Can't write the file to disk"
+msgstr "Δεν μπορώ να γράψω το αρχείο στο δίσκο"
+
+#: Plugin/Admin/Model/Behavior/ImageBehavior.php:178
+msgid "An unknown extension caused the upload to fail"
+msgstr "Μια άγνωστη επέκταση προκάλεσε την αποστολή να αποτύχει"
+
+#: Plugin/Admin/View/Albums/add.ctp:4
+#: Plugin/Admin/View/Albums/edit.ctp:4
+#: Plugin/Admin/View/Elements/album_menu.ctp:8
+msgid "Create Album"
+msgstr "Δημιουργία Άλμπουμ"
+
+#: Plugin/Admin/View/Albums/add.ctp:14
+msgid "Add Album"
+msgstr "Δημιουργία Άλμπουμ"
+
+#: Plugin/Admin/View/Albums/add.ctp:18
+#: Plugin/Admin/View/Albums/edit.ctp:18
+msgid "Parent Album"
+msgstr "Μητρικό Άλμπουμ"
+
+#: Plugin/Admin/View/Albums/add.ctp:22
+#: Plugin/Admin/View/Albums/edit.ctp:22
+msgid "Generate Slug"
+msgstr "Δημιουργία Σλάγκ"
+
+#: Plugin/Admin/View/Albums/add.ctp:34
+#: Plugin/Admin/View/Pages/add.ctp:36
+msgid "Create"
+msgstr "Δημιουργία"
+
+#: Plugin/Admin/View/Albums/edit.ctp:14
+msgid "Edit Album"
+msgstr "Επεξεργασία άλμπουμ"
+
+#: Plugin/Admin/View/Albums/edit.ctp:34
+#: Plugin/Admin/View/Pages/edit.ctp:36
+#: Plugin/Admin/View/Photos/edit.ctp:40
+#: Plugin/Admin/View/Settings/index.ctp:50
+#: Plugin/Admin/View/Users/add.ctp:25
+#: Plugin/Admin/View/Users/edit.ctp:26
+#: View/Users/edit.ctp:21
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: Plugin/Admin/View/Albums/index.ctp:11
+#: Plugin/Admin/View/Albums/view.ctp:70
+#: Plugin/Admin/View/Pages/index.ctp:11
+#: Plugin/Admin/View/Photos/duplicates.ctp:21
+#: Plugin/Admin/View/Photos/index.ctp:21
+#: Plugin/Admin/View/Settings/view.ctp:11
+#: Plugin/Admin/View/Users/index.ctp:13
+#: Plugin/Admin/View/Users/queue.ctp:14
+msgid "id"
+msgstr "id"
+
+#: Plugin/Admin/View/Albums/index.ctp:15
+#: Plugin/Admin/View/Albums/view.ctp:73
+#: Plugin/Admin/View/Pages/index.ctp:17
+#: Plugin/Admin/View/Photos/duplicates.ctp:24
+#: Plugin/Admin/View/Photos/identical.ctp:18
+#: Plugin/Admin/View/Photos/index.ctp:24
+#: Plugin/Admin/View/Users/index.ctp:19
+#: Plugin/Admin/View/Users/queue.ctp:21
+msgid "Actions"
+msgstr "Δράσεις"
+
+#: Plugin/Admin/View/Albums/index.ctp:29
+#: Plugin/Admin/View/Albums/view.ctp:148
+#: Plugin/Admin/View/Photos/index.ctp:98
+#: Plugin/Admin/View/Photos/upload.ctp:12;16
+msgid "Upload"
+msgstr "Ανεβάστε"
+
+#: Plugin/Admin/View/Albums/index.ctp:34
+msgid "Album Integration Link"
+msgstr "Σύνδεσμοι Ενσωμάτωσης"
+
+#: Plugin/Admin/View/Albums/index.ctp:37
+msgid "Slideshow View"
+msgstr "Σλάιντ σόου"
+
+#: Plugin/Admin/View/Albums/index.ctp:44
+msgid "You need at least one photo in your album for a slideshow"
+msgstr "Χρειάζεται τουλάχιστον μία φωτογραφία στο άλμπουμ σας, για να δείτε Σλάιντ σόου"
+
+#: Plugin/Admin/View/Albums/index.ctp:46
+msgid "Colorbox View"
+msgstr "Colorbox"
+
+#: Plugin/Admin/View/Albums/index.ctp:51
+msgid "Album View"
+msgstr "Προβολή Άλμπουμ"
+
+#: Plugin/Admin/View/Albums/index.ctp:58
+msgid "Close"
+msgstr "Κλείστε"
+
+#: Plugin/Admin/View/Albums/index.ctp:62
+msgid "Get Links"
+msgstr "Σύνδεσμοι"
+
+#: Plugin/Admin/View/Albums/index.ctp:70
+#: Plugin/Admin/View/Albums/view.ctp:117
+#: Plugin/Admin/View/Pages/index.ctp:65
+#: Plugin/Admin/View/Photos/identical.ctp:62
+#: Plugin/Admin/View/Photos/index.ctp:68
+#: Plugin/Admin/View/Photos/upload.ctp:47
+#: Plugin/Admin/View/Users/index.ctp:64
+msgid "Delete"
+msgstr "Διαγραφή"
+
+#: Plugin/Admin/View/Albums/index.ctp:73
+#: Plugin/Admin/View/Albums/view.ctp:120
+#: Plugin/Admin/View/Pages/index.ctp:68
+#: Plugin/Admin/View/Photos/identical.ctp:65
+#: Plugin/Admin/View/Photos/index.ctp:71
+#: Plugin/Admin/View/Photos/view.ctp:110
+#: Plugin/Admin/View/Users/index.ctp:67
+msgid "Are you sure you want to delete %s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε το %s;"
+
+#: Plugin/Admin/View/Albums/index.ctp:83
+#: Plugin/Admin/View/Albums/view.ctp:132
+#: Plugin/Admin/View/Pages/index.ctp:78
+#: Plugin/Admin/View/Photos/duplicates.ctp:61
+#: Plugin/Admin/View/Photos/index.ctp:83
+#: Plugin/Admin/View/Photos/search.ctp:89
+#: Plugin/Admin/View/Settings/view.ctp:35
+#: Plugin/Admin/View/Users/index.ctp:77
+#: Plugin/Admin/View/Users/queue.ctp:48
+#: View/Albums/index.ctp:56
+#: View/Albums/view.ctp:110
+#: View/Pages/home.ctp:31
+#: View/Pages/index.ctp:27
+#: View/Photos/index.ctp:62
+#: View/Photos/search.ctp:88
+#: View/Themed/Embedded/Albums/view.ctp:53
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "Σελίδα {:page} απο {:pages} σελίδες, δείχνοντας {:current} εγγραφές από {:count} σύνολο, ξεκινόντας από την καταγραφή {:start}, και λήγοντας στις {:end}"
+
+#: Plugin/Admin/View/Albums/index.ctp:89
+#: Plugin/Admin/View/Albums/view.ctp:138
+#: Plugin/Admin/View/Pages/index.ctp:84
+#: Plugin/Admin/View/Photos/duplicates.ctp:67
+#: Plugin/Admin/View/Photos/index.ctp:89
+#: Plugin/Admin/View/Photos/search.ctp:95
+#: Plugin/Admin/View/Settings/view.ctp:41
+#: Plugin/Admin/View/Users/index.ctp:83
+#: Plugin/Admin/View/Users/queue.ctp:54
+#: View/Albums/index.ctp:62
+#: View/Albums/view.ctp:116
+#: View/Pages/home.ctp:37
+#: View/Pages/index.ctp:33
+#: View/Photos/index.ctp:68
+#: View/Photos/search.ctp:94
+#: View/Themed/Embedded/Albums/view.ctp:59
+msgid "previous"
+msgstr "προηγούμενn"
+
+#: Plugin/Admin/View/Albums/index.ctp:91
+#: Plugin/Admin/View/Albums/view.ctp:140
+#: Plugin/Admin/View/Pages/index.ctp:86
+#: Plugin/Admin/View/Photos/duplicates.ctp:69
+#: Plugin/Admin/View/Photos/index.ctp:91
+#: Plugin/Admin/View/Photos/search.ctp:97
+#: Plugin/Admin/View/Settings/view.ctp:43
+#: Plugin/Admin/View/Users/index.ctp:85
+#: Plugin/Admin/View/Users/queue.ctp:56
+#: View/Albums/index.ctp:64
+#: View/Albums/view.ctp:118
+#: View/Pages/home.ctp:39
+#: View/Pages/index.ctp:35
+#: View/Photos/index.ctp:70
+#: View/Photos/search.ctp:96
+#: View/Themed/Embedded/Albums/view.ctp:61
+msgid "next"
+msgstr "επόμενη"
+
+#: Plugin/Admin/View/Albums/tree.ctp:13
+msgid "Drag and Drop to rearrange albums"
+msgstr "Drag and Drop για να αναδιατάξετε τα άλμπουμ"
+
+#: Plugin/Admin/View/Albums/tree.ctp:65
+msgid "There was an error moving this album"
+msgstr "Υπήρξε ένα σφάλμα κατά τη μετακίνηση αυτό το άλμπουμ"
+
+#: Plugin/Admin/View/Albums/view.ctp:17
+#: Plugin/Admin/View/Photos/details.ctp:84
+#: View/Albums/view.ctp:17
+#: View/Photos/details.ctp:77
+msgid "Name"
+msgstr "Όνομα"
+
+#: Plugin/Admin/View/Albums/view.ctp:21
+#: Plugin/Admin/View/Photos/details.ctp:133
+#: Plugin/Admin/View/Photos/identical.ctp:17
+#: View/Albums/view.ctp:21
+#: View/Photos/details.ctp:126
+msgid "Created"
+msgstr "Δημιουργήθηκε"
+
+#: Plugin/Admin/View/Albums/view.ctp:42
+#: View/Albums/view.ctp:42
+msgid "Child Albums"
+msgstr "Yπο άλμπουμ"
+
+#: Plugin/Admin/View/Albums/view.ctp:61
+#: Plugin/Admin/View/Photos/duplicates.ctp:12
+#: Plugin/Admin/View/Photos/index.ctp:12
+#: Plugin/Admin/View/Photos/search.ctp:40
+#: View/Albums/index.ctp:14
+#: View/Albums/view.ctp:61
+#: View/Photos/index.ctp:11
+#: View/Photos/search.ctp:39
+#: View/Themed/Embedded/Albums/view.ctp:7
+msgid "Sort"
+msgstr "Ταξινόμηση"
+
+#: Plugin/Admin/View/Albums/view.ctp:97
+#: Plugin/Admin/View/Pages/index.ctp:28
+#: Plugin/Admin/View/Photos/identical.ctp:42
+#: Plugin/Admin/View/Photos/index.ctp:48
+msgid "Unpublish"
+msgstr "Αναίρεση δημοσίευσης"
+
+#: Plugin/Admin/View/Albums/view.ctp:100
+#: Plugin/Admin/View/Pages/index.ctp:31
+#: Plugin/Admin/View/Photos/identical.ctp:45
+#: Plugin/Admin/View/Photos/index.ctp:51
+msgid "Are you sure you want to unpublish %s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να αναιρέσετε τη δημοσίευση %s;"
+
+#: Plugin/Admin/View/Albums/view.ctp:103
+#: Plugin/Admin/View/Pages/index.ctp:34
+#: Plugin/Admin/View/Photos/identical.ctp:48
+#: Plugin/Admin/View/Photos/index.ctp:54
+msgid "Publish"
+msgstr "Δημοσίευση"
+
+#: Plugin/Admin/View/Albums/view.ctp:106
+#: Plugin/Admin/View/Photos/identical.ctp:51
+#: Plugin/Admin/View/Photos/index.ctp:57
+msgid "Are you sure you want to publish %s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να δημοσιεύσετε %σ;"
+
+#: Plugin/Admin/View/Dashboard/index.ctp:5
+#: Plugin/Admin/View/Elements/admin_menu.ctp:6
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:8
+msgid "Dashboard"
+msgstr "Ταμπλό"
+
+#: Plugin/Admin/View/Dashboard/index.ctp:10
+msgid "Recent Albums"
+msgstr "Πρόσφατα Άλμπουμ"
+
+#: Plugin/Admin/View/Dashboard/index.ctp:23
+msgid "Recent Photos"
+msgstr "Πρόσφατες φωτογραφίες"
+
+#: Plugin/Admin/View/Dashboard/index.ctp:39
+msgid "Recent Content"
+msgstr "Πρόσφατες Σελίδες"
+
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:7
+#: View/Elements/navigation.ctp:7
+msgid "Navigation"
+msgstr "Πλοηγηση"
+
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:9
+msgid "Manage Content"
+msgstr "Διαχείριση Σελίδων"
+
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:10
+msgid "Manage Albums"
+msgstr "Διαχείριση Άλμπουμ"
+
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:12
+msgid "Manage Photos"
+msgstr "Διαχείριση φωτογραφιών"
+
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:13
+msgid "Find Duplicates"
+msgstr "Εύρεση διπλοεγγραφών"
+
+#: Plugin/Admin/View/Elements/admin_navigation.ctp:15
+msgid "Manage Users"
+msgstr "Διαχείριση χρηστών"
+
+#: Plugin/Admin/View/Elements/album_menu.ctp:7
+msgid "Album Actions"
+msgstr "Δράσεις άλμπουμ"
+
+#: Plugin/Admin/View/Elements/album_menu.ctp:10
+msgid "Verify Album Tree"
+msgstr "Επαλήθευση Δέντρο άλμπουμ"
+
+#: Plugin/Admin/View/Elements/album_menu.ctp:11
+msgid "Restructure Album Tree"
+msgstr "Αναδιάρθρωση Δέντρο άλμπουμ"
+
+#: Plugin/Admin/View/Elements/page_menu.ctp:7
+msgid "Content Actions"
+msgstr "Ενέργειες σελίδων"
+
+#: Plugin/Admin/View/Elements/page_menu.ctp:8
+msgid "Create Content"
+msgstr "Δημιουργία Σελίδας"
+
+#: Plugin/Admin/View/Elements/photo_menu.ctp:8
+#: View/Elements/photo_menu.ctp:8
+msgid "Photo Actions"
+msgstr "Δράσεις Φωτογραφιών"
+
+#: Plugin/Admin/View/Elements/photo_menu.ctp:9
+msgid "Add Photos"
+msgstr "Προσθήκη Φωτογραφιών"
+
+#: Plugin/Admin/View/Elements/photo_menu.ctp:11
+#: Plugin/Admin/View/Photos/colorbox.ctp:6
+#: View/Elements/photo_menu.ctp:10
+#: View/Photos/colorbox.ctp:7
+msgid "Colorbox"
+msgstr "Colorbox"
+
+#: Plugin/Admin/View/Elements/settings_menu.ctp:8
+msgid "View All Settings"
+msgstr "Προβολή όλων των ρυθμίσεων"
+
+#: Plugin/Admin/View/Elements/settings_menu.ctp:9
+msgid "Clear Application Cache"
+msgstr "Kαθαρίστε το xώρο προσωρινής αποθήκευσης"
+
+#: Plugin/Admin/View/Elements/user_menu.ctp:7
+msgid "User Actions"
+msgstr "Δράσεις Χρήστη"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:29
+#: Plugin/Admin/View/Layouts/default.ctp:29
+#: Plugin/Admin/View/Users/view.ctp:33
+#: View/Layouts/default.ctp:46
+msgid "Admin"
+msgstr "Διαχείριση"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:40
+#: Plugin/Admin/View/Layouts/default.ctp:40
+#: View/Layouts/default.ctp:40
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:46
+#: Plugin/Admin/View/Layouts/default.ctp:46
+msgid "User View"
+msgstr "Χρήστης"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:51
+#: Plugin/Admin/View/Layouts/default.ctp:51
+msgid "Manage"
+msgstr "Διαχείριση"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:55
+#: Plugin/Admin/View/Layouts/default.ctp:55
+#: Plugin/Admin/View/Users/add.ctp:3
+#: Plugin/Admin/View/Users/edit.ctp:3
+#: Plugin/Admin/View/Users/index.ctp:2;9
+#: Plugin/Admin/View/Users/queue.ctp:2;10
+#: Plugin/Admin/View/Users/view.ctp:2
+#: View/Users/edit.ctp:3
+#: View/Users/password.ctp:2
+#: View/Users/view.ctp:2
+msgid "Users"
+msgstr "Χρήστες"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:58
+#: Plugin/Admin/View/Layouts/default.ctp:58
+#: Plugin/Admin/View/Pages/add.ctp:3
+#: Plugin/Admin/View/Pages/edit.ctp:3
+#: Plugin/Admin/View/Pages/view.ctp:2
+#: View/Pages/home.ctp:7
+#: View/Pages/view.ctp:2
+msgid "Content"
+msgstr "Περιεχόμενα"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:68
+#: Plugin/Admin/View/Layouts/default.ctp:68
+#: View/Layouts/default.ctp:56
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:69
+#: Plugin/Admin/View/Layouts/default.ctp:69
+msgid "Account Details"
+msgstr "Λεπτομέρειες Λογαριασμού"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:70
+#: Plugin/Admin/View/Layouts/default.ctp:70
+#: Plugin/Admin/View/Users/edit.ctp:12
+#: View/Users/edit.ctp:4;12
+msgid "Edit Account"
+msgstr "Επεξεργασία λογαριασμού"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:71
+#: Plugin/Admin/View/Layouts/default.ctp:71
+#: View/Users/password.ctp:3;7
+msgid "Change Password"
+msgstr "Αλλαγή κωδικού"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:123
+#: Plugin/Admin/View/Layouts/default.ctp:121
+#: View/Layouts/default.ctp:109
+msgid "Copyright"
+msgstr "Πνευματική ιδιοκτησία"
+
+#: Plugin/Admin/View/Layouts/crop.ctp:126
+#: Plugin/Admin/View/Layouts/default.ctp:124
+#: View/Layouts/default.ctp:112
+msgid "All rights reserved"
+msgstr "Όλα τα δικαιώματα διατηρούνται"
+
+#: Plugin/Admin/View/Pages/add.ctp:19
+msgid "Create new Content"
+msgstr "Δημιουργία Σελίδας"
+
+#: Plugin/Admin/View/Pages/add.ctp:27
+#: Plugin/Admin/View/Pages/edit.ctp:27
+msgid "Disable rich text"
+msgstr "Απενεργοποίηση εμπλουτισμένου κειμένου"
+
+#: Plugin/Admin/View/Pages/add.ctp:29
+#: Plugin/Admin/View/Pages/edit.ctp:29
+msgid "Enable rich text"
+msgstr "Ενεργοποίηση εμπλουτισμένου κειμένου"
+
+#: Plugin/Admin/View/Pages/edit.ctp:19
+msgid "Create a new Page"
+msgstr "Δημιουργία Σελίδας"
+
+#: Plugin/Admin/View/Pages/index.ctp:37
+#: Plugin/Admin/View/Users/index.ctp:52
+msgid "Are you sure you want to activate %s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να ενεργοποιήσετε %s;"
+
+#: Plugin/Admin/View/Pages/index.ctp:43
+msgid "Un-Promote"
+msgstr "Κατάργηση Προώθησης"
+
+#: Plugin/Admin/View/Pages/index.ctp:46
+msgid "Are you sure you want to un-promote %s from the front page?"
+msgstr "Είστε βέβαιοι ότι θέλετε να καταργήσετε την προώθηση% s από την αρχική σελίδα;"
+
+#: Plugin/Admin/View/Pages/index.ctp:49
+msgid "Promote"
+msgstr "Προώθηση"
+
+#: Plugin/Admin/View/Pages/index.ctp:52
+msgid "Are you sure you want to promote %s to the front page?"
+msgstr "Είστε βέβαιοι ότι θέλετε να προωθήσετε %s στην αρχική σελίδα;"
+
+#: Plugin/Admin/View/Photos/details.ctp:17
+#: View/Photos/details.ctp:17
+msgid "Previous"
+msgstr "Προηγούμενη"
+
+#: Plugin/Admin/View/Photos/details.ctp:23
+#: Plugin/Admin/View/Photos/view.ctp:52
+#: View/Photos/details.ctp:23
+#: View/Photos/view.ctp:53
+msgid "Next"
+msgstr "Επόμενη"
+
+#: Plugin/Admin/View/Photos/details.ctp:32
+#: Plugin/Admin/View/Photos/view.ctp:96
+#: View/Photos/details.ctp:32
+msgid "Download"
+msgstr "Λήψη"
+
+#: Plugin/Admin/View/Photos/details.ctp:35
+msgid "Remove EXIF"
+msgstr "Κατάργηση EXIF"
+
+#: Plugin/Admin/View/Photos/details.ctp:37
+msgid "Remove EXIF Metadata"
+msgstr "Κατάργηση EXIF"
+
+#: Plugin/Admin/View/Photos/details.ctp:38
+msgid "Are you sure you want to delete the EXIF data for this photo?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε τα δεδομένα EXIF ​​για αυτή τη φωτογραφία;"
+
+#: Plugin/Admin/View/Photos/details.ctp:57
+#: Plugin/Admin/View/Photos/edit.ctp:10
+#: View/Photos/details.ctp:51
+msgid "Thumbnail"
+msgstr "Μικρογραφία"
+
+#: Plugin/Admin/View/Photos/details.ctp:77
+#: View/Photos/details.ctp:71
+msgid "Photo"
+msgstr "Φωτογραφία"
+
+#: Plugin/Admin/View/Photos/details.ctp:89
+#: Plugin/Admin/View/Photos/identical.ctp:16
+#: View/Photos/details.ctp:82
+msgid "Title"
+msgstr "Τίτλος"
+
+#: Plugin/Admin/View/Photos/details.ctp:101
+#: View/Photos/details.ctp:94
+msgid "Type"
+msgstr "Τύπος"
+
+#: Plugin/Admin/View/Photos/details.ctp:105
+#: View/Photos/details.ctp:98
+msgid "Size"
+msgstr "Μέγεθος"
+
+#: Plugin/Admin/View/Photos/details.ctp:109
+#: View/Photos/details.ctp:102
+msgid "Width"
+msgstr "Πλάτος"
+
+#: Plugin/Admin/View/Photos/details.ctp:113
+#: View/Photos/details.ctp:106
+msgid "Height"
+msgstr "Ύψος"
+
+#: Plugin/Admin/View/Photos/details.ctp:117
+#: View/Photos/details.ctp:110
+msgid "Views"
+msgstr "Προβολές"
+
+#: Plugin/Admin/View/Photos/details.ctp:121
+#: View/Photos/details.ctp:114
+msgid "Date Taken"
+msgstr "Ημερομηνία Λήψης"
+
+#: Plugin/Admin/View/Photos/details.ctp:125
+#: View/Photos/details.ctp:118
+msgid "Location"
+msgstr "Τοποθεσία"
+
+#: Plugin/Admin/View/Photos/details.ctp:129
+#: View/Photos/details.ctp:122
+msgid "Last Viewed"
+msgstr "Τελευταία Προβολή"
+
+#: Plugin/Admin/View/Photos/duplicates.ctp:9
+msgid "Duplicate Photos"
+msgstr "Διπλότυπες Φωτογραφίες"
+
+#: Plugin/Admin/View/Photos/duplicates.ctp:49
+msgid "View Duplicates"
+msgstr "Δείτε Διπλοεγγραφές"
+
+#: Plugin/Admin/View/Photos/edit.ctp:3;28
+msgid "Edit Photo"
+msgstr "Επεξεργασία φωτογραφίας"
+
+#: Plugin/Admin/View/Photos/identical.ctp:8
+msgid "Identical Photos"
+msgstr "Ίδιες Φωτογραφίες"
+
+#: Plugin/Admin/View/Photos/identical.ctp:15
+msgid "Id"
+msgstr "Id"
+
+#: Plugin/Admin/View/Photos/search.ctp:3;16;24
+#: View/Elements/search.ctp:7
+#: View/Photos/search.ctp:4;16;23
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: Plugin/Admin/View/Photos/search.ctp:19
+#: Plugin/Admin/View/Photos/upload.ctp:18
+#: View/Photos/search.ctp:19
+msgid "Select an Album"
+msgstr "Επιλέξτε άλμπουμ"
+
+#: Plugin/Admin/View/Photos/upload.ctp:26
+msgid "Add Files"
+msgstr "Προσθήκη αρχείων"
+
+#: Plugin/Admin/View/Photos/upload.ctp:39
+msgid "Start upload"
+msgstr "Έναρξη αποστολής"
+
+#: Plugin/Admin/View/Photos/upload.ctp:43
+msgid "Cancel upload"
+msgstr "Ακύρωση αποστολής"
+
+#: Plugin/Admin/View/Photos/view.ctp:46
+#: View/Photos/view.ctp:47
+msgid "Prev"
+msgstr "Προηγούμενn"
+
+#: Plugin/Admin/View/Photos/view.ctp:62
+msgid "First"
+msgstr "Πρώτη"
+
+#: Plugin/Admin/View/Photos/view.ctp:68
+msgid "Last"
+msgstr "Τελευταία"
+
+#: Plugin/Admin/View/Photos/view.ctp:87
+#: View/Photos/view.ctp:62
+msgid "Full Size"
+msgstr "Πλήρης Μέγεθος"
+
+#: Plugin/Admin/View/Photos/view.ctp:92
+msgid "Make Album Cover"
+msgstr "Κάντε εξώφυλλο του άλμπουμ"
+
+#: Plugin/Admin/View/Photos/view.ctp:109
+msgid "Delete Photo"
+msgstr "Διαγραφή"
+
+#: Plugin/Admin/View/Photos/view.ctp:113
+msgid "Rotate left"
+msgstr "Περιστροφή αριστερά"
+
+#: Plugin/Admin/View/Photos/view.ctp:116
+msgid "Rotate right"
+msgstr "Περιστροφή δεξιά"
+
+#: Plugin/Admin/View/Settings/view.ctp:3
+msgid "View Settings"
+msgstr "Προβολή ρυθμίσεων"
+
+#: Plugin/Admin/View/Users/add.ctp:4
+msgid "Add User"
+msgstr "Προσθήκη χρήστη"
+
+#: Plugin/Admin/View/Users/add.ctp:12
+msgid "Create Account"
+msgstr "Δημιουργία λογαριασμού"
+
+#: Plugin/Admin/View/Users/index.ctp:30;38
+msgid "Yes"
+msgstr "Ναι"
+
+#: Plugin/Admin/View/Users/index.ctp:32;40
+msgid "No"
+msgstr "Όχι"
+
+#: Plugin/Admin/View/Users/index.ctp:43
+msgid "Deactivate"
+msgstr "Απενεργοποιήσετε"
+
+#: Plugin/Admin/View/Users/index.ctp:46
+msgid "Are you sure you want to deactivate %s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να απενεργοποιήσετε %s?"
+
+#: Plugin/Admin/View/Users/index.ctp:49
+msgid "Activate"
+msgstr "Ενεργοποίηση"
+
+#: Plugin/Admin/View/Users/queue.ctp:35
+msgid "Approve"
+msgstr "Eγκρίνετε"
+
+#: Plugin/Admin/View/Users/queue.ctp:38
+msgid "Are you sure you want to approve %s?"
+msgstr "Είστε βέβαιοι ότι θέλετε να εγκρίνετε %s?"
+
+#: Plugin/Admin/View/Users/view.ctp:7
+#: View/Users/view.ctp:7
+msgid "User"
+msgstr "Χρήστης"
+
+#: Plugin/Admin/View/Users/view.ctp:11
+#: View/Users/view.ctp:11
+msgid "Field"
+msgstr "Πεδίο"
+
+#: Plugin/Admin/View/Users/view.ctp:12
+#: View/Users/view.ctp:12
+msgid "Value"
+msgstr "Αξία"
+
+#: Plugin/Admin/View/Users/view.ctp:17
+#: View/Users/view.ctp:17
+msgid "Username"
+msgstr "Όνομα χρήστη"
+
+#: Plugin/Admin/View/Users/view.ctp:21
+#: View/Users/view.ctp:21
+msgid "Email"
+msgstr "e-mail"
+
+#: Plugin/Admin/View/Users/view.ctp:25
+#: View/Users/view.ctp:25
+msgid "Nickname"
+msgstr "Ψευδώνυμο"
+
+#: Plugin/Admin/View/Users/view.ctp:29
+msgid "Active"
+msgstr "Ενεργός"
+
+#: Plugin/Admin/View/Users/view.ctp:37
+#: View/Users/view.ctp:29
+msgid "Last Login"
+msgstr "Τελευταία είσοδος"
+
+#: Plugin/Admin/View/Users/view.ctp:48
+msgid "Last Login IP"
+msgstr "IP τελευταίας εισόδου"
+
+#: Plugin/Admin/View/Users/view.ctp:52
+msgid "Last Login User Agent"
+msgstr "Πράκτορας χρήστη τελευταίας εισόδου"
+
+#: Plugin/Admin/View/Users/view.ctp:56
+msgid "Signup IP"
+msgstr "IP Εγγραφής"
+
+#: Plugin/Admin/View/Users/view.ctp:60
+msgid "Signup User Agent"
+msgstr "Πράκτορας χρήστη εγγραφής"
+
+#: View/Albums/tree.ctp:13
+msgid "Click an Album to Open it"
+msgstr "Κάντε κλικ σε ένα άλμπουμ για να το ανοίξετε"
+
+#: View/Elements/navigation.ctp:11
+msgid "All Photos"
+msgstr "Όλες οι φωτογραφίες"
+
+#: View/Errors/error400.ctp:22;31
+#: View/Errors/error500.ctp:3
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: View/Errors/error400.ctp:24
+msgid "The requested address %s was not found on this server."
+msgstr "Η ζητούμενη διεύθυνση %s δεν βρέθηκε σε αυτόν το διακομιστή."
+
+#: View/Pages/home.ctp:13
+#: View/Pages/view.ctp:13
+msgid "More"
+msgstr "Περισσότερα"
+
+#: View/Pages/index.ctp:20
+msgid "Read More"
+msgstr "Διαβάστε περισσότερα"
+
+#: View/Pages/view.ctp:7
+msgid "Recent Pages"
+msgstr "Πρόσφατες σελίδες"
+
+#: View/Users/forgot.ctp:8
+msgid "Username or Email"
+msgstr "Όνομα Χρήστη ή e-mail"
+
+#: View/Users/forgot.ctp:21
+msgid "Send Email"
+msgstr "Αποστολή e-mail"
+
+#: View/Users/login.ctp:18
+msgid "Forgot Password"
+msgstr "Ξέχασα τον κωδικό"
+
+#: View/Users/password.ctp:14
+#: View/Users/reset.ctp:6;12
+msgid "Reset Password"
+msgstr "Επαναφορά κωδικού"
+
+#: View/Users/view.ctp:3
+msgid "Your account"
+msgstr "Ο λογαριασμός σας"
+
+msgid "Password"
+msgstr " Κωδικός"
+
+msgid "Modified"
+msgstr "Αλλάχθηκε"
+
+msgid "Confirm Password"
+msgstr "Επιβεβαίωση κωδικού"
+
+msgid "Parent"
+msgstr "Μητρικό Άλμπουμ"
+
+msgid "Permission"
+msgstr "Άδεια"
+
+msgid "Description"
+msgstr "Περιγραφή"
+
+msgid "Slug"
+msgstr "Σλάγκ"
+
+msgid "Locale"
+msgstr "Γλώσσα"
+
+#~ msgid ""
+#~ "Your settings have been saved. Please refresh the page if you've changed "
+#~ "the theme."
+#~ msgstr ""
+#~ "Οι ρυθμίσεις σας έχουν αποθηκευτεί. Παρακαλούμε ανανεώστε τη σελίδα, αν "
+#~ "έχετε αλλάξει το θέμα."
+
+#~ msgid "Carousel"
+#~ msgstr "Σλάιντ σόου"
+
+#~ msgid "An Internal Error Has Occurred."
+#~ msgstr "Ένα εσωτερικό σφάλμα συνέβη."
+
+#~ msgid "Invalid page"
+#~ msgstr "Λάθος σελίδα"
+
+#~ msgid "Page not Found"
+#~ msgstr "Η σελίδα δεν βρέθηκε"

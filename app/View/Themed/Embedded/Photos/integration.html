@@ -1,0 +1,39 @@
+<?php
+/**
+* @author Aris Karageorgos <aris@deepspacehosting.com>
+* @copyright 2012 Aris Karageorgos (http://deepspacehosting.com)
+* @license GPL V2 (http://www.gnu.org/licenses/gpl2.txt)
+* @version $x2.version$
+* @package x2
+*/
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <?php /* Only use these if you want the integration to be made with colorbox. */ ?>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.colorbox.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/colorbox.min.css">
+        <script>
+            function showColorbox(links, id) {
+                $('body').append(links);
+                $('.gallery').colorbox({
+                    scalePhotos: true, 
+                    maxWidth: '95%',
+                    maxHeight: '95%', 
+                    //open: true, 
+                    rel:'gallery'
+                });
+                $('#c'+id).trigger('click');
+            };
+        </script>
+        <?php /* End colorbox specific */ ?>
+    </head>
+    <body>
+        <h1>My Awesome Website</h1>
+
+        <p>My Awesome Integrated Gallery</p>
+        <iframe name="inlineframe" src="http://yoursitehere.com/photos/colorbox/4/t:embedded" frameborder="0" scrolling="auto" width="900" height="770"></iframe>
+    </body>
+</html>

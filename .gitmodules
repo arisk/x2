@@ -1,0 +1,6 @@
+[submodule "app/Plugin/Search"]
+	path = app/Plugin/Search
+	url = https://github.com/CakeDC/search.git
+[submodule "app/Plugin/I18n"]
+	path = app/Plugin/I18n
+	url = https://github.com/CakeDC/i18n.git

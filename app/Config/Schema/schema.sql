@@ -90,10 +90,7 @@ CREATE  TABLE IF NOT EXISTS `albums` (
     REFERENCES `permissions` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB
-AUTO_INCREMENT = 19
-DEFAULT CHARACTER SET = utf8
-COLLATE = utf8_general_ci;
+ENGINE = InnoDB;
 
 SHOW WARNINGS;
 
@@ -190,7 +187,7 @@ SHOW WARNINGS;
 
 LOCK TABLES `settings` WRITE;
 /*!40000 ALTER TABLE `settings` DISABLE KEYS */;
-INSERT INTO `settings` VALUES (1,'Name','X2','General','text','Name of your gallery','2012-06-15 09:20:08',NULL),(2,'Theme','Cerulean','General','select','Select a theme for your gallery','2012-06-15 09:20:08','a:1:{s:5:\"empty\";s:7:\"Default\";}'),(3,'Show_Children','1','Album','checkbox','Should children be shown along with photos?','2012-06-15 09:20:08',NULL),(4,'Allow_Downloads','1','Photo','checkbox','Should I allow downloads of the original photo','2012-06-15 09:20:08',NULL),(5,'Registration','1','User','checkbox','Should I allow user registration','2012-06-15 09:20:08',NULL),(6,'XSX','64','Size','int','Extra Small width','2012-06-15 09:20:08',NULL),(7,'XSY','48','Size','int','Extra Small height','2012-06-15 09:20:08',NULL),(8,'SX','160','Size','int','Small width','2012-06-15 09:20:08',NULL),(9,'SY','120','Size','int','Small height','2012-06-15 09:20:08',NULL),(10,'LX','1024','Size','int','Large width','2012-06-15 09:20:08',NULL),(11,'LY','768','Size','int','Large height','2012-06-15 09:20:08',NULL),(12,'XS','xs','Dir','text','Extra Small Directory','2012-06-15 09:20:08',NULL),(13,'S','s','Dir','text','Small Directory','2012-06-15 09:20:08',NULL),(14,'L','l','Dir','text','Large Directory','2012-06-15 09:20:08',NULL),(15,'O','o','Dir','text','Original Directory','2012-06-15 09:20:08',NULL),(16,'P','p','Dir','text','Photo Directory','2012-06-15 09:20:08',NULL),(17,'Require_Approval','1','User','checkbox','Require Admin Approval ','2012-06-15 09:20:08',NULL),(18,'Allow_Full','1','Photo','checkbox','Allow Showing of full size photos','2012-06-15 09:20:08',NULL),(19,'Language','en','General','select','Default Language','2012-06-15 09:20:08',NULL);
+INSERT INTO `settings` VALUES (1,'Name','X2','General','text','Name of your gallery','2012-06-15 09:20:08',NULL),(2,'Theme','Cerulean','General','select','Select a theme for your gallery','2012-06-15 09:20:08','a:1:{s:5:\"empty\";s:7:\"Default\";}'),(3,'Show_Children','1','Album','checkbox','Should children be shown along with photos?','2012-06-15 09:20:08',NULL),(4,'Allow_Downloads','1','Photo','checkbox','Should I allow downloads of the original photo','2012-06-15 09:20:08',NULL),(5,'Registration','1','User','checkbox','Should I allow user registration','2012-06-15 09:20:08',NULL),(6,'XSX','64','Size','int','Extra Small width','2012-06-15 09:20:08',NULL),(7,'XSY','48','Size','int','Extra Small height','2012-06-15 09:20:08',NULL),(8,'SX','160','Size','int','Small width','2012-06-15 09:20:08',NULL),(9,'SY','120','Size','int','Small height','2012-06-15 09:20:08',NULL),(10,'LX','1024','Size','int','Large width','2012-06-15 09:20:08',NULL),(11,'LY','768','Size','int','Large height','2012-06-15 09:20:08',NULL),(12,'XS','xs','Dir','text','Extra Small Directory','2012-06-15 09:20:08',NULL),(13,'S','s','Dir','text','Small Directory','2012-06-15 09:20:08',NULL),(14,'L','l','Dir','text','Large Directory','2012-06-15 09:20:08',NULL),(15,'O','o','Dir','text','Original Directory','2012-06-15 09:20:08',NULL),(16,'P','p','Dir','text','Photo Directory','2012-06-15 09:20:08',NULL),(17,'Require_Approval','1','User','checkbox','Require Admin Approval ','2012-06-15 09:20:08',NULL),(18,'Allow_Full','1','Photo','checkbox','Allow Showing of full size photos','2012-06-15 09:20:08',NULL),(19,'Language','en','General','select','Default Language','2012-06-15 09:20:08',NULL),(20,'First','1','User','checkbox','First User of the System? Do not change this unless you understand the consequences',NULL,NULL);
 /*!40000 ALTER TABLE `settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -235,8 +232,7 @@ CREATE  TABLE IF NOT EXISTS `i18n` (
   INDEX `model` (`model` ASC) ,
   INDEX `row_id` (`foreign_key` ASC) ,
   INDEX `field` (`field` ASC) )
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8;
+ENGINE = InnoDB;
 
 SHOW WARNINGS;
 

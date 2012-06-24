@@ -108,25 +108,25 @@ class UsersController extends AppController{
             $last_login = new DateTime();
             
             if(Configure::read('X2.User.First') === true){
-                $this->request->data['User']['admin'] = 1;
-                $this->request->data['User']['active'] = 1;
+                $this->request->data['User']['admin'] = true;
+                $this->request->data['User']['active'] = true;
                 $settings = new Setting();
                 $first_user = $settings->find('first', array('conditions'=>array('section'=>'User', 'name'=>'First')));
                 if(!$first_user){
                     throw new UnexpectedValueException(__('Your configuration table is wrong or corrupt'));
                 }
                 $settings->create();
-                $settings->id = $first_user->id;
-                $d = array('Setting'=>array('value'=>0));
+                $settings->id = $first_user['Setting']['id'];
+                $d = array('Setting'=>array('value'=>false));
                 $settings->save($d, false);
             }
             else{
-                $this->request->data['User']['admin'] = 0;
+                $this->request->data['User']['admin'] = false;
                 if(Configure::read('X2.User.Require_Approval')){
-                    $this->request->data['User']['active'] = 0;
+                    $this->request->data['User']['active'] = false;
                 }
                 else{
-                    $this->request->data['User']['active'] = 1;
+                    $this->request->data['User']['active'] = true;
                 }
             }
             $this->request->data['User']['signup'] = $last_login->format('Y-m-d H:i:s');

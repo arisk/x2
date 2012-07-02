@@ -9,6 +9,7 @@
 ?>
 <?php $this->extend('/Layouts/two'); ?>
 <?php $this->Html->addCrumb(__('Photos')); ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <?php $this->start('left'); ?>
 <?php echo $this->element('navigation'); ?>
 <?php $this->end(); ?>
@@ -36,13 +37,14 @@
                 ?>
             <?php else: ?>
                 <?php
-                $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+                $image_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                         Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
-                print $this->Html->link($this->Html->image($image_url, 
-                    array('alt' => h($photos[$i]['Photo']['title']))), 
-                    array('controller' => 'photos', 'action' => 'view', 
-                        h($photos[$i]['Photo']['id'])), 
-                    array('class' => 'thumbnail', 'escape' => false)
+                print $this->Html->image($image_url, 
+                    array(
+                        'class'=>'thumbnail', 
+                        'alt' => h($photos[$i]['Photo']['title']), 
+                        'url'=>array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id'])),
+                    )
                 );
                 ?>
             <?php endif; ?>
@@ -65,6 +67,7 @@
 
 <div class="row">
     <div class="span8">
+        <?php if(Configure::read('X2.Pagination.Details')): ?>
         <p>
             <?php
             echo $this->Paginator->counter(array(
@@ -72,6 +75,7 @@
             ));
             ?>
         </p>
+        <?php endif; ?>
         <div class="paging">
             <?php
             echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));

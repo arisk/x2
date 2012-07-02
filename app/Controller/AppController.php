@@ -29,7 +29,7 @@ class AppController extends Controller {
     /**
      * Standard Helpers for all controllers 
      */    
-    public $helpers = array('Session', 'Html', 'Form', 'Menu', 'I18n.I18n');
+    public $helpers = array('Session', 'Html', 'Form', 'Menu', 'I18n.I18n', 'X2');
     
     /**
      * Setup the application

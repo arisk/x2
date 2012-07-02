@@ -30,6 +30,7 @@ $this->Html->css('chosen.min', null, array('inline'=>false));
     </p>
 </div>
 <?php endforeach; ?>
+<?php if(Configure::read('X2.Pagination.Details')): ?>
 <p>
     <?php
     echo $this->Paginator->counter(array(
@@ -37,6 +38,7 @@ $this->Html->css('chosen.min', null, array('inline'=>false));
     ));
     ?>	
 </p>
+<?php endif; ?>
 <div class="paging">
     <?php
     echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));

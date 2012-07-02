@@ -39,12 +39,14 @@
             <td>
                 <div class="photo">
                     <?php
-                    $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photo['Photo']['file_path'].'/'.
+                    $image_url = h($this->X2->photoUrl().$photo['Photo']['file_path'].'/'.
                             Configure::read('X2.Dir.XS').'/'.$photo['Photo']['file_name']);
-                    print $this->Html->link($this->Html->image($image_url, 
-                        array('alt' => h($photo['Photo']['title']))), 
-                        array('controller' => 'photos', 'action' => 'view', h($photo['Photo']['id'])), 
-                        array('class' => 'thumbnail', 'escape' => false)
+                    echo $this->Html->image($image_url, 
+                        array(
+                            'alt' => h($photo['Photo']['title']),
+                            'class' => 'thumbnail',
+                            'url' => array('controller' => 'photos', 'action' => 'view', h($photo['Photo']['id']))
+                        )
                     );
                     ?>
                 </div>

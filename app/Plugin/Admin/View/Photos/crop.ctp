@@ -19,7 +19,7 @@ $this->Html->addCrumb(__('Crop'));
     echo $this->Form->submit(__('Crop'), array('class'=>'btn btn-primary'));
     ?>
     <div class="crop">
-        <?php $url = h('/'.Configure::read('X2.Dir.P').'/'.$photo['Photo']['file_path'].'/'.
+        <?php $url = h($this->X2->photoUrl().$photo['Photo']['file_path'].'/'.
                 Configure::read('X2.Dir.O').'/'.$photo['Photo']['file_name']);
         echo $this->Html->image($url, array('id'=>'crop-photo'));
         ?>

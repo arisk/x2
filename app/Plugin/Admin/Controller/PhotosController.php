@@ -88,7 +88,7 @@ class PhotosController extends AdminAppController{
                     'Photo.id'=>(int)$id,
                 ),
                 'fields' => array(
-                    'id', 'album_id', 'name', 'title', 'created', 
+                    'id', 'album_id', 'name', 'title', 'created', 'description',
                     'width', 'height', 'file_path', 'file_name', 'views', 'modified',
                 ),
             )
@@ -148,7 +148,7 @@ class PhotosController extends AdminAppController{
         $id = (int)filter_var($id, FILTER_SANITIZE_NUMBER_INT);
         $photo = $this->Photo->find('first', 
             array(
-               'fields'=>array('id', 'name', 'title', 'created', 'file_path', 'file_name', 
+               'fields'=>array('id', 'name', 'title', 'created', 'file_path', 'file_name', 'description',
                    'views', 'type', 'size', 'width', 'height', 'taken', 'last_viewed', 'location'),
                'contain'=>array(
                     'Album' => array(
@@ -221,7 +221,7 @@ class PhotosController extends AdminAppController{
         $photos = $this->Photo->find('all', 
             array(
                 'conditions'=>array('Photo.album_id'=>(int)$album['Album']['id']),
-                'fields'=>array('id', 'title', 'file_name', 'file_path'),
+                'fields'=>array('id', 'title', 'file_name', 'file_path', 'description'),
             )
         );
         if(!$photos){

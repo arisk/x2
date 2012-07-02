@@ -10,6 +10,7 @@
 <?php
 $this->extend('/Layouts/two');
 $this->Html->addCrumb(__('Edit Photo'));
+$url = $this->X2->photoUrl();
 $this->Html->script('chosen.jquery.min', array('inline'=>false));
 $this->Html->css('chosen.min', null, array('inline'=>false));
 ?>
@@ -19,12 +20,14 @@ $this->Html->css('chosen.min', null, array('inline'=>false));
     <h3><?php echo __('Thumbnail'); ?></h3>
     <div class="photo">
         <?php
-        $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photo['Photo']['file_path'].'/'.
+        $image_url = h($url.$photo['Photo']['file_path'].'/'.
                 Configure::read('X2.Dir.S').'/'.$photo['Photo']['file_name']);
-        print $this->Html->link($this->Html->image($image_url, 
-            array('alt' => h($photo['Photo']['title']))), 
-            array('controller' => 'photos', 'action' => 'view', h($photo['Photo']['id'])), 
-            array('class' => 'thumbnail', 'escape' => false)
+        echo $this->Html->image($image_url, 
+            array(
+                'alt' => h($photo['Photo']['title']),
+                'class' => 'thumbnail',
+                'url' => array('controller' => 'photos', 'action' => 'view', h($photo['Photo']['id']))
+            )
         );
         ?>
     </div>
@@ -47,6 +50,7 @@ $this->Html->css('chosen.min', null, array('inline'=>false));
         <?php
         echo $this->Form->input('album_id', array('data-placeholder'=>__('Album')))
         ?>
+        <?php echo $this->Form->input('description'); ?>
         <?php echo $this->Form->input('views'); ?>
         <?php echo $this->Form->input('taken', array('type'=>'datetime')); ?>
         <?php echo $this->Form->input('location'); ?>

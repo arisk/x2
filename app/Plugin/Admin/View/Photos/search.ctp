@@ -10,6 +10,7 @@
 <?php $this->extend('/Layouts/two'); ?>
 <?php $this->Html->addCrumb(__('Photos'), array('controller'=>'photos', 'action'=>'index')); ?>
 <?php $this->Html->addCrumb(__('Search')); ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <?php
 $this->Html->script('chosen.jquery.min', array('inline'=>false));
 $this->Html->css('chosen.min', null, array('inline'=>false));
@@ -62,12 +63,14 @@ $(function(){
             ?>
         <?php else: ?>
             <?php
-            $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+            $image_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                     Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
-            print $this->Html->link($this->Html->image($image_url, 
-                array('alt' => h($photos[$i]['Photo']['title']))), 
-                array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id'])), 
-                array('class' => 'thumbnail', 'escape' => false)
+            echo $this->Html->image($image_url, 
+                array(
+                    'alt' => h($photos[$i]['Photo']['title']),
+                    'class' => 'thumbnail',
+                    'url' => array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id']))
+                )
             );
             ?>
         <?php endif; ?>

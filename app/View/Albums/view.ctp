@@ -10,6 +10,7 @@
 <?php $this->extend('/Layouts/two'); ?>
 <?php $this->Html->addCrumb(__('Albums'), array('controller'=>'albums', 'action'=>'index')); ?>
 <?php $this->Html->addCrumb(h($album['Album']['name'])); ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <?php $this->start('left'); ?>
 <div class="well">
     <table class="table table-bordered table-striped table-condensed">
@@ -34,7 +35,7 @@
             <tr>
                 <td colspan="2">
                     <?php
-                    $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$album['CoverPhoto']['file_path'].'/'
+                    $image_url = h($url.$album['CoverPhoto']['file_path'].'/'
                             .Configure::read('X2.Dir.S').'/'.$album['CoverPhoto']['file_name']);
                     ?>
                     <?php echo $this->Html->image($image_url, 
@@ -86,12 +87,14 @@
             ?>
         <?php else: ?>
             <?php
-            $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+            $image_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                     Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
-            print $this->Html->link($this->Html->image($image_url, 
-                array('alt' => h($photos[$i]['Photo']['title']))), 
-                array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id'])), 
-                array('class' => 'thumbnail', 'escape' => false)
+            echo $this->Html->image($image_url, 
+                array(
+                    'alt' => h($photos[$i]['Photo']['title']),
+                    'class' => 'thumbnail',
+                    'url' => array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id']))
+                )
             );
             ?>
         <?php endif; ?>

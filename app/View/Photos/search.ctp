@@ -11,6 +11,7 @@
 $this->extend('/Layouts/two');
 $this->Html->addCrumb(__('Photos'), array('action'=>'index'));
 $this->Html->addCrumb(__('Search'));
+$url = $this->X2->photoUrl();
 $this->Html->script('chosen.jquery.min', array('inline'=>false));
 $this->Html->css('chosen.min', null, array('inline'=>false));
 ?>
@@ -43,7 +44,7 @@ $(function(){
 <?php $this->end(); ?>
 <div class="row">
     <div class="span5">
-        <h3><?php echo __('Photos'); ?></h3>
+        <h3><?php echo __('Photo search results'); ?></h3>
     </div>
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
@@ -65,12 +66,14 @@ $(function(){
                 ?>
             <?php else: ?>
                 <?php
-                $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+                $image_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                         Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
-                print $this->Html->link($this->Html->image($image_url, 
-                    array('alt' => h($photos[$i]['Photo']['title']))), 
-                    array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id'])), 
-                    array('class' => 'thumbnail', 'escape' => false)
+                print $this->Html->image($image_url, 
+                    array(
+                        'class'=>'thumbnail', 
+                        'alt' => h($photos[$i]['Photo']['title']), 
+                        'url'=>array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id'])),
+                    )
                 );
                 ?>
             <?php endif; ?>
@@ -92,6 +95,7 @@ $(function(){
 <?php endif; ?>
 <div class="row">
     <div class="span8">
+        <?php if(Configure::read('X2.Pagination.Details')): ?>
         <p>
             <?php
             echo $this->Paginator->counter(array(
@@ -99,6 +103,7 @@ $(function(){
             ));
             ?>
         </p>
+        <?php endif; ?>
         <div class="paging">
             <?php
             echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));

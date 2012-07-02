@@ -30,12 +30,15 @@
                     ?>
                 <?php else: ?>
                     <?php
-                    $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+                    $image_url = h($this->X2->photoUrl().$photos[$i]['Photo']['file_path'].'/'.
                             Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
-                    print $this->Html->link($this->Html->image($image_url, array('alt' => h($photos[$i]['Photo']['title']))), 
-                            array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id'])), 
-                            array('class' => 'thumbnail', 'escape' => false)
-                            );
+                    echo $this->Html->image($image_url, 
+                        array(
+                            'alt' => h($photos[$i]['Photo']['title']),
+                            'class' => 'thumbnail',
+                            'url' => array('controller' => 'photos', 'action' => 'view', h($photos[$i]['Photo']['id']))
+                        )
+                    );
                     ?>
                 <?php endif; ?>
                 <div class="caption">

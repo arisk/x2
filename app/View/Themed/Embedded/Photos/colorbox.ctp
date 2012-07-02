@@ -7,6 +7,7 @@
 * @package x2
 */
 ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <div class="span8">
 <?php $photo_links = ''; ?>
 <?php $count = count($photos); ?>
@@ -17,16 +18,16 @@
         <li class="span2">
             <?php
             $title = !empty($photos[$i]['Photo']['title']) ? $photos[$i]['Photo']['title'] : $photos[$i]['Photo']['name'];
-            $image_s_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+            $image_s_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                     Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
-            $image_l_url = h('/'.Configure::read('X2.Dir.P').'/'.$photos[$i]['Photo']['file_path'].'/'.
+            $image_l_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                     Configure::read('X2.Dir.L').'/'.$photos[$i]['Photo']['file_name']);
             print $this->Html->link(
                 $this->Html->image($image_s_url, 
-                    array('alt' => h($title))
+                    array('alt' => h($title), 'class'=>'thumbnail')
                 ), 
                 $image_l_url, 
-                array('class' => 'thumbnail gallery', 
+                array('class' => 'gallery', 
                     'escape' => false, 'title'=>h($title),
                     'id'=>'img_'.h($photos[$i]['Photo']['id']), 
                 )

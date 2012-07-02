@@ -41,6 +41,8 @@ foreach($this->I18n->availableLanguages() as $l){
             <?php $name = Inflector::humanize(h($setting['name'])); ?>
             <?php if($setting['type'] == 'checkbox'): ?>
                 <?php $s = array('label'=>$name, 'type'=>h($setting['type']), 'checked'=>(bool)h($setting['value'])); ?>
+            <?php elseif($setting['type'] == 'textarea'): ?>
+                <?php $s = array('label'=>$name, 'type'=>h($setting['type']), 'value'=>$setting['value']); ?>
             <?php else: ?>
                 <?php if($setting['type'] == 'int'): ?>
                     <?php $setting['type']= 'text'; ?>

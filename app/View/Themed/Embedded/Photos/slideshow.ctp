@@ -17,7 +17,7 @@
                 <?php endif; ?>
                 <div class="<?php echo $class; ?>">
                     <?php 
-                    $url = '/'.Configure::read('X2.Dir.P').'/'.$photo['Photo']['file_path'].'/'.
+                    $url = $this->X2->photoUrl().$photo['Photo']['file_path'].'/'.
                             Configure::read('X2.Dir.L').'/'.$photo['Photo']['file_name'];
                     $title = isset($photo['Photo']['title']) ? $photo['Photo']['title'] : $photo['Photo']['name'];
                     ?>

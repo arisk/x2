@@ -9,7 +9,7 @@
 ?>
 <?php $this->extend('/Layouts/two'); ?>
 <?php $this->Html->addCrumb(__('Albums')); ?>
-<?php $url = Router::url('/'.Configure::read('X2.Dir.P')); ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <?php
 $this->start('left');
 echo $this->element('navigation');
@@ -37,13 +37,19 @@ $this->end();
                     array('action'=>'view', $albums[$i]['Album']['id']), 
                     array('class'=>'thumbnail', 'escape'=>false)); ?>
             <?php else: ?>
-            <?php $image_url = h($url.'/'.$albums[$i]['CoverPhoto']['file_path'].'/'.
+            <?php $image_url = h($url.$albums[$i]['CoverPhoto']['file_path'].'/'.
                     Configure::read('X2.Dir.S').'/'.$albums[$i]['CoverPhoto']['file_name']); 
                   $alt = h($albums[$i]['CoverPhoto']['title']);
             ?>
-            <?php print $this->Html->link('<img src="'.$image_url.'" alt="'.$alt.'" />', 
-                    array('action'=>'view', h($albums[$i]['Album']['id'])), 
-                    array('class'=>'thumbnail', 'escape'=>false)); ?>            
+            <?php 
+            print $this->Html->image($image_url, 
+                array(
+                    'class'=>'thumbnail', 
+                    'alt'=>$alt, 
+                    'url'=>array('action'=>'view', h($albums[$i]['Album']['id'])),
+                )
+            ); 
+            ?>           
             <?php endif; ?>
             <div class="caption">
             <?php echo $this->Html->link($albums[$i]['Album']['name'], array('action'=>'view', h($albums[$i]['Album']['id']))); ?>
@@ -59,6 +65,7 @@ $this->end();
 <?php endif; ?>
 <div class="row">
     <div class="span8">
+        <?php if(Configure::read('X2.Pagination.Details')): ?>
         <p>
         <?php
         echo $this->Paginator->counter(array(
@@ -66,6 +73,7 @@ $this->end();
         ));
         ?>
         </p>
+        <?php endif; ?>
         <div class="paging">
         <?php
             echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));

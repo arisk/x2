@@ -29,6 +29,13 @@ class SettingsController extends AdminAppController{
             $themes[$t] = $t;
         }
         if($this->request->is('post')){
+            /* Clean any HTML */
+            require_once APP.'Vendor'.DS.'HtmlPurifier/HTMLPurifier.standalone.php';
+            $purifier = new HTMLPurifier();
+            foreach($this->request->data['Setting'] as &$data){
+                //$data['value'] = $purifier->purify($data['value']);
+            }
+            unset($data);
             $saved = $this->Setting->saveAll($this->request->data['Setting'], array('validate'=>false));
             if($saved){
                 $this->setFlash(__('Your settings have been saved'));

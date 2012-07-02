@@ -7,6 +7,7 @@
 * @package x2
 */
 ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <?php $this->extend('/Layouts/two'); ?>
 <?php $this->start('left'); ?>
 <?php echo $this->element('admin_navigation'); ?>
@@ -32,11 +33,19 @@
                 <h4><?php echo __('Recent Photos'); ?></h4>
                 <ul class="thumbnails">
                 <?php foreach($photos as $photo): ?>
-                    <?php $image_url = h('/'.Configure::read('X2.Dir.P').'/'.$photo['Photo']['file_path'].'/'.
+                    <?php $image_url = h($url.$photo['Photo']['file_path'].'/'.
                             Configure::read('X2.Dir.XS').'/'.$photo['Photo']['file_name']); ?>
-                    <li><?php echo $this->Html->link($this->Html->image($image_url), 
-                            array('controller'=>'photos', 'action'=>'view', h($photo['Photo']['id'])),
-                            array('escape'=>false, 'class'=>'thumbnail')) ?></li>
+                    <li>
+                        <?php 
+                        echo $this->Html->image($image_url, 
+                            array(
+                                'alt' => h($photos['Photo']['title']),
+                                'class' => 'thumbnail',
+                                'url' => array('controller' => 'photos', 'action' => 'view', h($photos['Photo']['id']))
+                            )
+                        );
+                        ?>
+                    </li>
                 <?php endforeach; ?>   
                 </ul>
             </div>

@@ -491,6 +491,10 @@ a.desc:after {
     width: 100%;
     padding: 0;
 }
+.thumbnail{
+    margin-left: auto;
+    margin-right: auto;
+}
 .photo .thumbnail{
     float: left;
 }

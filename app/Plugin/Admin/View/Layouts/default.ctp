@@ -127,10 +127,7 @@
             </div>
             <div id="footer" class="row">
                 <div id="footer-text" class="span12">
-                    <?php echo __('Copyright'); ?> &copy; 
-                        <?php echo date('Y'); ?>
-                        <?php echo $this->Html->link('ArisX2', 'http://arisx2.com'); ?>
-                    <?php echo __('All rights reserved'); ?>
+                    <?php echo Configure::read('X2.General.Footer_Text'); ?>
                 </div>
             </div>
         </div>

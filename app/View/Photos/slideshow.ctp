@@ -12,6 +12,7 @@
 <?php $this->Html->addCrumb(h($album['Album']['name']), 
         array('controller'=>'albums', 'action'=>'view', h($album['Album']['id']))); ?>
 <?php $this->Html->addCrumb(__('Slideshow'));?>
+<?php $url = $this->X2->photoUrl(); ?>
 <div class="row">
     <div class="span10 offset1">
         <div id="slideshow" class="carousel slide">
@@ -23,13 +24,13 @@
                     <?php endif; ?>
                     <div class="<?php echo $class; ?>">
                         <?php 
-                        $url = '/'.Configure::read('X2.Dir.P').'/'.$photo['Photo']['file_path'].'/'.
+                        $url = $url.$photo['Photo']['file_path'].'/'.
                                 Configure::read('X2.Dir.L').'/'.$photo['Photo']['file_name'];
                         $title = isset($photo['Photo']['title']) ? h($photo['Photo']['title']) : h($photo['Photo']['name']);
                         ?>
                             <h4><?php print $title; ?></h4>
                         <?php
-                        echo $this->Html->Image($url, array('alt'=>$title)); 
+                        echo $this->Html->image($url, array('alt'=>$title)); 
                         ?>
                     </div>
                 <?php endforeach; ?>

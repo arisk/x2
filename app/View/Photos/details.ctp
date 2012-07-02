@@ -14,7 +14,7 @@
 <?php $this->Html->addCrumb(h($photo['Photo']['title']), 
         array('controller'=>'photos', 'action'=>'view', h($photo['Photo']['id']))); ?>
 <?php $this->Html->addCrumb(__('Details')); ?>
-<?php $url = Router::url('/'.Configure::read('X2.Dir.P')); ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <div id="photo-top" class="row">
     <div class="span5">
         <div class="btn-toolbar">
@@ -65,7 +65,7 @@
                 ?>
                 <li style="margin: 0;">
                     <div class="thumbnail ma">
-                        <img src="<?php echo h($image_url); ?>" alt="<?php echo $alt; ?>" />
+                        <?php echo $this->Html->image($image_url, array('alt'=>$alt))?>
                     </div>
                 </li>
             </ul>

@@ -23,6 +23,7 @@ $this->extend('/Layouts/two');
 </div>
 <?php $this->end(); ?>
 <p>
+    <?php echo __('Sort'); ?>: 
     <?php echo $this->Paginator->sort('created', null, array('class'=>'btn btn-mini'));?>
     <?php echo $this->Paginator->sort('modified', null, array('class'=>'btn btn-mini'));?>
 </p>

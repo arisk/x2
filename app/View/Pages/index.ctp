@@ -16,6 +16,7 @@ $this->Html->css('chosen.min', null, array('inline'=>false));
 <?php echo $this->element('navigation'); ?>
 <?php $this->end(); ?>
 <p>
+    <?php echo __('Sort'); ?>: 
     <?php echo $this->Paginator->sort('created', null, array('class'=>'btn btn-mini'));?>
     <?php echo $this->Paginator->sort('modified', null, array('class'=>'btn btn-mini'));?>
 </p>

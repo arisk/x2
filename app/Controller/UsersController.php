@@ -60,7 +60,7 @@ class UsersController extends AppController{
                         $this->redirect($this->Auth->redirect());
                     }
                     else{
-                        $this->redirect(array('plugin'=>null, 'controller'=>'pages', 'action'=>'home'));
+                        $this->redirect(array('plugin'=>null, 'controller'=>'albums', 'action'=>'index'));
                     }
                 }
                 else{

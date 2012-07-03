@@ -11,6 +11,9 @@
 App::uses('AppController', 'Controller');
 
 class AdminAppController extends AppController {
+    
+    public $layout = 'admin';
+    
     /* Authorize admins to do it all */
     public function isAuthorized($user){
         if(parent::isAuthorized($user)){

@@ -107,6 +107,11 @@
                         </td>
                     </tr>
                     <tr>
+                        <td colspan="2">
+                            <?php echo $photo['Photo']['description']  ?>
+                        </td>
+                    </tr>
+                    <tr>
                         <td><?php echo __('Type') ?></td>
                         <td><?php echo h($photo['Photo']['type']); ?></td>
                     </tr>

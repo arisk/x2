@@ -100,6 +100,13 @@ function dimensions($width, $height, $fit = null){
         </div>
     </div>
 </div>
+<?php if(!empty($photo['Photo']['description'])): ?>
+<div class="row">
+    <div class="span6 offset3">
+        <?php echo $photo['Photo']['description']  ?>
+    </div>
+</div>
+<?php endif; ?>
 <?php
 if(!empty($photo['Photo']['width']) && !empty($photo['Photo']['width'])){
     $dimensions = dimensions(h($photo['Photo']['width']), h($photo['Photo']['height']));

@@ -39,9 +39,9 @@
                         <?php 
                         echo $this->Html->image($image_url, 
                             array(
-                                'alt' => h($photos['Photo']['title']),
+                                'alt' => h($photo['Photo']['title']),
                                 'class' => 'thumbnail',
-                                'url' => array('controller' => 'photos', 'action' => 'view', h($photos['Photo']['id']))
+                                'url' => array('controller' => 'photos', 'action' => 'view', h($photo['Photo']['id']))
                             )
                         );
                         ?>

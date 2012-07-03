@@ -108,7 +108,7 @@ class PhotosController extends AppController{
                     'Album.permission_id >=' => $this->getPermission(),
                 ),
                 'fields' => array(
-                    'id', 'album_id', 'name', 'title', 'created', 
+                    'id', 'album_id', 'name', 'title', 'created', 'description',
                     'width', 'height', 'file_path', 'file_name', 'views', 'modified',
                 ),
             )
@@ -184,7 +184,7 @@ class PhotosController extends AppController{
         $id = (int)filter_var($id, FILTER_SANITIZE_NUMBER_INT);
         $photo = $this->Photo->find('first', 
             array(
-               'fields'=>array('id', 'name', 'title', 'created', 'file_path', 'file_name', 
+               'fields'=>array('id', 'name', 'title', 'created', 'file_path', 'file_name', 'description',
                    'views', 'type', 'size', 'width', 'height', 'taken', 'last_viewed', 'location'),
                'contain'=>array(
                     'Album' => array(

@@ -7,6 +7,7 @@
 * @package x2
 */
 ?>
+<?php $show_date = Configure::read('X2.Photo.Show_Photo_Date'); ?>
 <div class="span8">
     <div class="row">
         <div class="span5">
@@ -47,7 +48,9 @@
                     ?>
                     <?php echo $this->Html->link($title, 
                             array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
+                    <?php if($show_date): ?>
                     <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['created'])); ?></small></p>
+                    <?php endif; ?>
                 </div>
             </li>
             <?php if($i % 4 == 3): ?>

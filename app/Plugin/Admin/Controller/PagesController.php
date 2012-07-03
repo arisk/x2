@@ -57,7 +57,7 @@ class PagesController extends AdminAppController{
                 $this->Page->locale = Sanitize::paranoid($this->request->data['Page']['locale']);
             }
             /* Clean the HTML */
-            require_once APP.'Vendor'.DS.'HtmlPurifier/HTMLPurifier.standalone.php';
+            require_once APP.'Vendor'.DS.'Htmlpurifier/HTMLPurifier.standalone.php';
             $purifier = new HTMLPurifier();
             $this->request->data['Page']['html'] = $purifier->purify(nl2br($this->request->data['Page']['html']));
             

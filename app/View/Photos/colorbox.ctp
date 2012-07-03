@@ -15,6 +15,7 @@
         array('controller'=>'albums', 'action'=>'view', h($album['Album']['id']))); ?>
 <?php $this->Html->addCrumb(__('Colorbox')); ?>
 <?php $url = $this->X2->photoUrl(); ?>
+<?php $show_date = Configure::read('X2.Photo.Show_Photo_Date'); ?>
 <?php
 $this->start('left');
 echo $this->element('navigation');
@@ -46,7 +47,9 @@ $this->end();
                 ?>
                 <?php echo $this->Html->link($title, 
                         array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
+                <?php if($show_date): ?>
                 <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
+                <?php endif; ?>
             </div>
         </li>
         <?php if($i % 4 == 3): ?>

@@ -53,7 +53,7 @@
                             </li>
                             <li>
                                 <?php echo $this->Html->link(__('User View'), 
-                                    array('plugin'=>null, 'controller'=>'pages', 'action'=>'home')); ?>
+                                    array('plugin'=>null, 'controller'=>'albums', 'action'=>'index')); ?>
                             </li>
                             <li class="dropdown">
                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">

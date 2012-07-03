@@ -30,7 +30,7 @@ class SettingsController extends AdminAppController{
         }
         if($this->request->is('post')){
             /* Clean any HTML */
-            require_once APP.'Vendor'.DS.'HtmlPurifier/HTMLPurifier.standalone.php';
+            require_once APP.'Vendor'.DS.'Htmlpurifier/HTMLPurifier.standalone.php';
             $purifier = new HTMLPurifier();
             foreach($this->request->data['Setting'] as &$data){
                 //$data['value'] = $purifier->purify($data['value']);

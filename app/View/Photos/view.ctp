@@ -91,11 +91,13 @@ function dimensions($width, $height, $fit = null){
                     <i class="icon-play-circle"></i>
                     <?php echo __('Slideshow'); ?>
                 </a>
+                <?php if(Configure::read('X2.Photo.Photo_Details')): ?>
                 <a class="btn btn-small btn-primary" href="<?php echo $this->Html->url(
                         array('controller' => 'photos', 'action' => 'details', h($photo['Photo']['id']))); ?>">
                     <i class="icon-info-sign"></i>
                     <?php echo __('Details'); ?>
                 </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

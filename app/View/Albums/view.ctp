@@ -11,6 +11,7 @@
 <?php $this->Html->addCrumb(__('Albums'), array('controller'=>'albums', 'action'=>'index')); ?>
 <?php $this->Html->addCrumb(h($album['Album']['name'])); ?>
 <?php $url = $this->X2->photoUrl(); ?>
+<?php $show_date = Configure::read('X2.Photo.Show_Photo_Date'); ?>
 <?php $this->start('left'); ?>
 <div class="well">
     <table class="table table-bordered table-striped table-condensed">
@@ -67,11 +68,13 @@
     <div class="span5">
         <h3><?php echo __('Photos'); ?></h3>
     </div>
+    <?php if(Configure::read('X2.Photo.Show_Photo_Sort')): ?>
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
         <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
         <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
     </div>
+    <?php endif; ?>
 </div>
 <?php $count = count($photos); ?>
 <?php for($i = 0; $i < $count; $i++): ?>
@@ -104,7 +107,9 @@
             ?>
             <?php echo $this->Html->link($title, 
                     array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
-            <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['created'])); ?></small></p>
+            <?php if($show_date): ?>
+            <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
+            <?php endif; ?>
         </div>
     </li>
     <?php if($i % 4 == 3): ?>

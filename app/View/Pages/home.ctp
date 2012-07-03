@@ -22,11 +22,6 @@ $this->extend('/Layouts/two');
     <?php echo $this->Html->link(__('More'), array('action'=>'index')); ?>
 </div>
 <?php $this->end(); ?>
-<p>
-    <?php echo __('Sort'); ?>: 
-    <?php echo $this->Paginator->sort('created', null, array('class'=>'btn btn-mini'));?>
-    <?php echo $this->Paginator->sort('modified', null, array('class'=>'btn btn-mini'));?>
-</p>
 <?php foreach($pages as $page): ?>
 <div class="well well-small">
     <h3><?php echo h($page['Page']['title']); ?></h3>

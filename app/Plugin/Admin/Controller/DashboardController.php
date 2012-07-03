@@ -50,7 +50,7 @@ class DashboardController extends AdminAppController{
             array(
                 'order'=>array('created'=>'DESC'),
                 'limit'=>6,
-                'fields'=>array('id', 'file_path', 'file_name')
+                'fields'=>array('id', 'title', 'file_path', 'file_name')
             )
         );
         $this->set('pages', $pages);

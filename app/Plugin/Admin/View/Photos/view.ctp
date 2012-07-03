@@ -43,7 +43,7 @@ function dimensions($width, $height, $fit = null){
 <?php $this->Html->addCrumb(h($photo['Album']['name']), 
         array('controller'=>'albums', 'action'=>'view', h($photo['Album']['id']))); ?>
 <?php $this->Html->addCrumb(h($photo['Photo']['title'])); ?>
-<?php $url = Router::url('/' . Configure::read('X2.Dir.P')); ?>
+<?php $url = $this->X2->photoUrl(); ?>
 <div id="photo-top" class="row">
     <div class="span12">
         <div class="btn-toolbar">
@@ -155,16 +155,29 @@ else{
 ?>
 <ul class="thumbnails ma" <?php echo isset($dimensions['width']) ? 'style="max-width: '.($dimensions['width']+10).'px;" ' : ''; ?>>
     <?php
-    $image_url = $url.'/'.h($photo['Photo']['file_path'].'/'.Configure::read('X2.Dir.L').'/'.$photo['Photo']['file_name']);
+    $image_l_url = $url.h($photo['Photo']['file_path'].'/'.Configure::read('X2.Dir.L').'/'.$photo['Photo']['file_name']);
+    $image_o_url = $url.h($photo['Photo']['file_path'].'/'.Configure::read('X2.Dir.O').'/'.$photo['Photo']['file_name']);
     if(isset($rotated) && $rotated){
-        $image_url.= '?'.uniqid();
+        $image_l_url.= '?'.uniqid();
+        $image_o_url.= '?'.uniqid();
     }
     $alt = isset($photo['Photo']['title']) ? h($photo['Photo']['title']) : h($photo['Photo']['name']);
     ?>
     <li style="margin-left:0;">
         <div class="thumbnail">
-            <img src="<?php echo $image_url ?>" alt="<?php echo $alt ?>" />
+            <?php echo $this->Html->link($this->Html->image($image_l_url, array('alt'=>$alt)), $image_o_url, array('class'=>'loupe-img', 'escape'=>false)); ?>
         </div>
     </li>
 </ul>
-<?php echo $this->Js->writeBuffer(); ?>
+<?php if(Configure::read('X2.Photo.Loupe')): ?>
+<?php $this->Html->script('jquery.loupe.min', array('inline'=>false)); ?>
+<script type="text/javascript">
+$(function(){
+    $('.loupe-img').loupe({
+      width: 250,
+      height: 200,
+      loupe: 'loupe'
+    }); 
+});
+</script>
+<?php endif; ?>

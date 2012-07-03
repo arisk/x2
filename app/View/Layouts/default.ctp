@@ -31,8 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <?php echo $this->Html->link(Configure::read('X2.General.Name'), 
-                            array('plugin'=>null, 'controller'=>'pages', 'action'=>'home'), 
+                    <?php echo $this->Html->link(Configure::read('X2.General.Name'), '/', 
                             array('class'=>'brand')); ?>
                     <div class="nav-collapse">
                         <?php echo $this->element('menu'); ?>
@@ -120,5 +119,3 @@
         <?php echo $this->fetch('script'); ?>
     </body>
 </html>
-<?php //var_dump($_SESSION); ?>
-<?php //var_dump($_SERVER); ?>

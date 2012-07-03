@@ -49,7 +49,7 @@ class AlbumsController extends AppController{
         $this->Album->recursive = 0;
         $this->paginate = array(
             'contain' => array('CoverPhoto'),
-            'limit' => 12,
+            'limit' => 15,
             'order' => 'Album.id',
             'conditions' => $conditions,
             'fields' => array('id','name','created','permission_id', 'parent_id', 'photo_id'),
@@ -66,11 +66,12 @@ class AlbumsController extends AppController{
      * @return void
      */
     public function view($id, $slug = null){
+        $this->autoRender = false;
         $id = (int)filter_var($id, FILTER_SANITIZE_NUMBER_INT);
         $this->Album->Photo->recursive = -1;
         $this->paginate = array('Photo' =>
             array(
-                'limit' => 12,
+                'limit' => 15,
                 'fields' => array('id', 'title', 'file_path', 'file_name', 'created'),
             )
         );
@@ -97,6 +98,12 @@ class AlbumsController extends AppController{
         $photos = $this->paginate('Photo', array('album_id' => $album['Album']['id'], 'Photo.published'=>true));
         $this->set('photos', $photos);
         $this->set('title_for_layout', __('Album').' :: '.h($album['Album']['name']));
+        if(Configure::read('X2.Photo.Render_Colorbox')){
+            $this->render('/Photos/colorbox');
+        }
+        else{
+            $this->render();
+        }
     }
     /**
      * Blank method. All processing starts from the client side with AJAX.

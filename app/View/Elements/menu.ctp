@@ -12,7 +12,7 @@ $menu = array(
     'options'=>array('class'=>'nav'),
     'photos'=>
     array(
-        array('title'=> __('Home'), 'url'=> array('plugin'=>null, 'controller'=>'pages', 'action'=>'home')),
+        array('title'=> __('Home'), 'url'=> '/'),
         array('title'=> __('Albums'), 'url'=> array('plugin'=>null, 'controller'=>'albums', 'action'=>'index')),
         array('title'=> __('Photos'), 'url'=> array('plugin'=>null, 'controller'=>'photos', 'action'=>'index')),
         array('title'=> __('Login'), 'url'=> array('plugin'=>null, 'controller'=>'users', 'action'=>'login'), 

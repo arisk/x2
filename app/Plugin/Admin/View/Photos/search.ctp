@@ -16,7 +16,7 @@ $this->Html->script('chosen.jquery.min', array('inline'=>false));
 $this->Html->css('chosen.min', null, array('inline'=>false));
 ?>
 <?php $this->start('left'); ?>
-<div class="well search">
+<div class="well well-small search">
     <?php
     echo $this->Form->create('Photo', array(
         'class'=>'form',
@@ -47,7 +47,7 @@ $(function(){
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
         <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-<?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
+        <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
     </div>
 </div>
 <?php $count = count($photos); ?>

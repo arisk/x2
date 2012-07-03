@@ -16,7 +16,6 @@
         array(
             array('title'=> __('Photo Actions'), 'options'=>array('class'=>'nav-header')),
             array('title'=> __('Slideshow'), 'url'=> array('controller'=>'photos', 'action'=>'slideshow', h($photos[0]['Photo']['id']))),
-            array('title'=> __('Colorbox'), 'url'=> array('controller'=>'photos', 'action'=> 'colorbox', h($album['Album']['id']))),
         )
     );
     print $this->Menu->render($menu);

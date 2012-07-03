@@ -14,7 +14,7 @@
         'photos'=>
         array(
             array('title'=> __('Navigation'), 'options'=>array('class'=>'nav-header')),
-            array('title'=> __('Home'), 'url'=> array('controller'=>'pages', 'action'=>'home')),
+            array('title'=> __('Home'), 'url'=> '/'),
             array('title'=> __('Albums'), 'url'=> array('controller'=>'albums', 'action'=>'index')),
             array('title'=> __('Album Tree'), 'url'=> array('controller'=>'albums', 'action'=>'tree')),
             array('title'=> __('All Photos'), 'url'=>array('controller'=>'photos', 'action'=>'index')),

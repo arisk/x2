@@ -28,7 +28,7 @@
 </div>
 <?php $count = count($photos); ?>
 <?php for($i = 0; $i < $count; $i++): ?>
-        <?php if($i % 4 == 0): ?>
+        <?php if($i % 5 == 0): ?>
         <ul class="row photos thumbnails">
             <?php endif; ?>
         <li class="span2">
@@ -62,11 +62,11 @@
                 <?php endif; ?>
             </div>
         </li>
-        <?php if($i % 4 == 3): ?>
+        <?php if($i % 5 == 4): ?>
         </ul>
     <?php endif; ?>
 <?php endfor; ?>
-<?php if(($i-1) % 4 != 3): ?>
+<?php if(($i-1) % 5 != 4): ?>
     <?php echo '</ul>'; ?>
 <?php endif; ?>
 

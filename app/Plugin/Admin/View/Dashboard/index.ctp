@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="span3">
+    <div class="span4">
         <div class="well menu">
             <div class="dashboard-widget">
                 <h4><?php echo __('Recent Photos'); ?></h4>

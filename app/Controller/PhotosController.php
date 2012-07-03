@@ -43,7 +43,7 @@ class PhotosController extends AppController{
     public function index(){
         $this->Photo->recursive = 0;
         $this->paginate = array(
-            'limit'=>12,
+            'limit'=>15,
             'contain' => array('Album'=> array('fields'=> array('id', 'permission_id'))),
             'conditions' => array(
                 'Photo.published' => true,
@@ -72,7 +72,7 @@ class PhotosController extends AppController{
                         'Photo.published'=>true,
                     ), 
                     $this->Photo->parseCriteria($this->passedArgs)),
-            'limit' => 12,
+            'limit' => 15,
             'fields' => array('id', 'title', 'file_name', 'file_path', 'taken'),
             'contain' => array('User'=>array('fields'=>array('id', 'username')),
                                'Album'=> array('fields'=> array('id', 'permission_id'))),

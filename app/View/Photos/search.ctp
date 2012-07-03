@@ -8,7 +8,7 @@
 */
 ?>
 <?php 
-$this->extend('/Layouts/two');
+$this->extend('/Layouts/search');
 $this->Html->addCrumb(__('Photos'), array('action'=>'index'));
 $this->Html->addCrumb(__('Search'));
 $url = $this->X2->photoUrl();
@@ -17,7 +17,7 @@ $this->Html->script('chosen.jquery.min', array('inline'=>false));
 $this->Html->css('chosen.min', null, array('inline'=>false));
 ?>
 <?php $this->start('left'); ?>
-<div class="well search">
+<div class="well well-small search">
     <?php
     echo $this->Form->create('Photo', array(
         'class'=>'form',

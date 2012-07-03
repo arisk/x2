@@ -513,6 +513,7 @@ a.desc:after {
 */
 .dashboard-widget{
     padding-left: 10px;
+    padding-right: 10px;
 }
 .chzn-container{
     color: #333;
@@ -551,4 +552,14 @@ a.desc:after {
 }
 .datetime select{
     width: auto;
+}
+/* For Loupe JQuery plugin */
+.loupe { 
+    background-color:#555; 
+    background:rgba(0, 0, 0, 0.25); 
+    border:5px solid rgba(0, 0, 0, 0); 
+    cursor:url('../img/blank.png'), url('../js/blank.cur'), none; 
+}
+.loupe img{
+    max-width: none;
 }

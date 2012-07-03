@@ -228,7 +228,7 @@ class AlbumsController extends AdminAppController{
         $this->Album->Photo->recursive = -1;
         $this->paginate = array('Photo' =>
             array(
-                'limit' => 12,
+                'limit' => 10,
                 'fields' => array('id', 'name', 'title', 'file_path', 'file_name', 'created', 'published'),
             )
         );

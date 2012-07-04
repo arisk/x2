@@ -229,7 +229,7 @@ class AlbumsController extends AdminAppController{
         $this->paginate = array('Photo' =>
             array(
                 'limit' => 10,
-                'fields' => array('id', 'name', 'title', 'file_path', 'file_name', 'created', 'published'),
+                'fields' => array('id', 'name', 'title', 'file_path', 'file_name', 'created', 'published', 'views'),
             )
         );
         $album = $this->Album->find('first', 

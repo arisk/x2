@@ -163,7 +163,7 @@ class PhotosController extends AppController{
         }
         $data = array();
         $data['Photo']['views'] = ++$photo['Photo']['views'];
-        $data['Photo']['last_viewed'] = date( 'Y-m-d H:i:s');
+        $data['Photo']['last_viewed'] = date('Y-m-d H:i:s');
         $data['Photo']['modified'] = $photo['Photo']['modified'];
         $this->Photo->save($data, null, array('views', 'last_viewed'));
         $this->set('photo', $photo);
@@ -274,7 +274,7 @@ class PhotosController extends AppController{
                     'Photo.album_id'=>(int)$album['Album']['id'],
                     'Photo.published' => true,
                 ),
-                'fields'=>array('id', 'title', 'file_name', 'file_path', 'taken'),
+                'fields'=>array('id', 'title', 'file_name', 'file_path', 'taken', 'views'),
             )
         );
         if(!$photos){

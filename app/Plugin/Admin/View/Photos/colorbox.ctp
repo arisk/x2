@@ -45,7 +45,7 @@ $this->end();
                 ?>
                 <?php echo $this->Html->link($title, 
                         array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
-                <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['created'])); ?></small></p>
+                <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
             </div>
         </li>
         <?php if($i % 4 == 3): ?>

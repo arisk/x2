@@ -13,6 +13,7 @@ $this->Html->addCrumb(__('Photos'), array('action'=>'index'));
 $this->Html->addCrumb(__('Search'));
 $url = $this->X2->photoUrl();
 $show_date = Configure::read('X2.Photo.Show_Photo_Date');
+$show_views = Configure::read('X2.Photo.Show_Photo_Views');
 $this->Html->script('chosen.jquery.min', array('inline'=>false));
 $this->Html->css('chosen.min', null, array('inline'=>false));
 ?>
@@ -50,8 +51,8 @@ $(function(){
     <?php if(Configure::read('X2.Photo.Show_Photo_Sort')): ?>
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
-        <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-        <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
+        <?php echo $this->Paginator->sort('taken', __('Date Taken'), array('class' => 'btn btn-mini')); ?> 
+        <?php echo $this->Paginator->sort('views', null, array('class' => 'btn btn-mini')); ?>        
     </div>
     <?php endif; ?>
 </div>
@@ -88,6 +89,9 @@ $(function(){
                         array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
                 <?php if($show_date): ?>
                 <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
+                <?php endif; ?>
+                <?php if($show_views): ?>
+                <p><small><?php echo h($photos[$i]['Photo']['views']).' '.__('views'); ?></small></p>
                 <?php endif; ?>
             </div>
         </li>

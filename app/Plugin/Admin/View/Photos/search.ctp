@@ -7,7 +7,7 @@
 * @package x2
 */
 ?>
-<?php $this->extend('/Layouts/two'); ?>
+<?php $this->extend('/Layouts/search'); ?>
 <?php $this->Html->addCrumb(__('Photos'), array('controller'=>'photos', 'action'=>'index')); ?>
 <?php $this->Html->addCrumb(__('Search')); ?>
 <?php $url = $this->X2->photoUrl(); ?>
@@ -46,8 +46,8 @@ $(function(){
     </div>
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
-        <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-        <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
+        <?php echo $this->Paginator->sort('taken', __('Date Taken'), array('class' => 'btn btn-mini')); ?> 
+        <?php echo $this->Paginator->sort('views', null, array('class' => 'btn btn-mini')); ?>        
     </div>
 </div>
 <?php $count = count($photos); ?>
@@ -81,6 +81,7 @@ $(function(){
             <?php echo $this->Html->link($title, 
                     array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
             <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
+            <p><small><?php echo h($photos[$i]['Photo']['views']).' '.__('views'); ?></small></p>
         </div>
     </li>
     <?php if($i % 4 == 3): ?>

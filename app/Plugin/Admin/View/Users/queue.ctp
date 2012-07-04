@@ -23,10 +23,7 @@ $this->end();
             <th><?php echo $this->Paginator->sort('id', __('id')); ?></th>
             <th><?php echo $this->Paginator->sort('username'); ?></th>
             <th><?php echo $this->Paginator->sort('email'); ?></th>
-            <th><?php echo $this->Paginator->sort('admin'); ?></th>
             <th><?php echo $this->Paginator->sort('nickname'); ?></th>
-            <th><?php echo $this->Paginator->sort('active'); ?></th>
-            <th><?php echo $this->Paginator->sort('last_login'); ?></th>
             <th><?php echo __('Actions'); ?></th>  
         </tr>
     </thead>
@@ -36,15 +33,17 @@ $this->end();
             <td><?php echo h($user['User']['id']); ?>&nbsp;</td>
             <td><?php echo h($user['User']['username']); ?>&nbsp;</td>
             <td><?php echo h($user['User']['email']); ?>&nbsp;</td>
-            <td><?php echo h($user['User']['admin']); ?>&nbsp;</td>
             <td><?php echo h($user['User']['nickname']); ?>&nbsp;</td>
-            <td><?php echo h($user['User']['active']); ?>&nbsp;</td>
-            <td><?php echo h($user['User']['last_login']); ?>&nbsp;</td>
             <td class="actions">
-                <?php echo $this->Form->postLink('<i class="icon-trash">&nbsp;</i>'.__('Approve'), 
+                <?php echo $this->Form->postLink('<i class="icon-ok">&nbsp;</i>'.__('Approve'), 
                     array('action' => 'approve', h($user['User']['id'])), 
                     array('escape'=>false, 'class'=>'btn btn-small btn-primary'), 
                     __('Are you sure you want to approve %s?', h($user['User']['username']))); 
+                ?>
+                <?php echo $this->Form->postLink('<i class="icon-trash">&nbsp;</i>'.__('Delete'), 
+                    array('action' => 'approve', h($user['User']['id'])), 
+                    array('escape'=>false, 'class'=>'btn btn-small btn-danger'), 
+                    __('Are you sure you want to delete %s?', h($user['User']['username']))); 
                 ?>
             </td>
         </tr>

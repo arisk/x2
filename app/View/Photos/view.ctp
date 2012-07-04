@@ -105,7 +105,7 @@ function dimensions($width, $height, $fit = null){
 <?php if(!empty($photo['Photo']['description'])): ?>
 <div class="row">
     <div class="span6 offset3 center">
-        <?php echo $photo['Photo']['description']  ?>
+        <?php echo $photo['Photo']['description'];  ?>
     </div>
 </div>
 <?php endif; ?>

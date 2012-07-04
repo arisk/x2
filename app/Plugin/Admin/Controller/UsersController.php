@@ -49,7 +49,7 @@ class UsersController extends AdminAppController{
     public function queue(){
         $this->paginate = array(
             'limit'=>8,
-            'fields'=>array('id', 'username', 'email', 'admin', 'active', 'last_login'),
+            'fields'=>array('id', 'username', 'email', 'nickname', 'active', 'last_login'),
         );
         $this->User->recursive = 0;
         $this->set('users', $this->paginate(null, array('active' => 0)));

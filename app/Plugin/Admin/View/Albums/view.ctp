@@ -67,11 +67,6 @@
     <div class="span5">
         <h3><?php echo __('Photos'); ?></h3>
     </div>
-    <div class="span3 sorter">
-        <?php echo __('Sort'); ?>:
-        <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-        <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
-    </div>
 </div>
 <?php if(count($photos) > 0): ?>
 <table class="table table-striped table-bordered table-condensed">
@@ -80,6 +75,7 @@
             <th><?php echo $this->Paginator->sort('id', __('id')); ?></th>
             <th><?php echo $this->Paginator->sort('title'); ?></th>
             <th><?php echo $this->Paginator->sort('created'); ?></th>
+            <th><?php echo $this->Paginator->sort('views'); ?></th>
             <th><?php echo __('Actions'); ?></th>
         </tr>
     </thead>
@@ -93,7 +89,7 @@
                             Configure::read('X2.Dir.XS').'/'.$photo['Photo']['file_name']);
                     echo $this->Html->image($image_url, 
                         array(
-                            'alt' => h($photos['Photo']['title']),
+                            'alt' => h($photo['Photo']['title']),
                             'class' => 'thumbnail',
                             'url' => array('controller' => 'photos', 'action' => 'view', h($photo['Photo']['id']))
                         )
@@ -104,6 +100,7 @@
             <td><?php echo $this->Html->link($photo['Photo']['title'], 
                     array('controller'=>'photos', 'action'=>'view', h($photo['Photo']['id']))); ?>&nbsp;</td>
             <td><?php echo h($this->Time->timeAgoInWords(h($photo['Photo']['created']))); ?>&nbsp;</td>
+            <td><?php echo h($photo['Photo']['views']); ?>&nbsp;</td>
             <td class="actions">
                 <?php if($photo['Photo']['published']): ?>
                     <?php echo $this->Form->postLink('<i class="icon-remove-circle">&nbsp;</i>'.__('Unpublish'), 

@@ -8,6 +8,7 @@
 */
 ?>
 <?php $show_date = Configure::read('X2.Photo.Show_Photo_Date'); ?>
+<?php $show_views = Configure::read('X2.Photo.Show_Photo_Views'); ?>
 <div class="span8">
     <div class="row">
         <div class="span5">
@@ -15,8 +16,8 @@
         </div>
         <div class="span3 sorter">
             <?php echo __('Sort'); ?>:
-            <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-            <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
+            <?php echo $this->Paginator->sort('taken', __('Date Taken'), array('class' => 'btn btn-mini')); ?> 
+            <?php echo $this->Paginator->sort('views', null, array('class' => 'btn btn-mini')); ?>        
         </div>
     </div>
     <?php $count = count($photos); ?>
@@ -49,7 +50,10 @@
                     <?php echo $this->Html->link($title, 
                             array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
                     <?php if($show_date): ?>
-                    <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['created'])); ?></small></p>
+                    <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
+                    <?php endif; ?>
+                    <?php if($show_views): ?>
+                    <p><small><?php echo h($photos[$i]['Photo']['views']).' '.__('views'); ?></small></p>
                     <?php endif; ?>
                 </div>
             </li>

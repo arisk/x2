@@ -34,7 +34,7 @@ class PhotosController extends AdminAppController{
         $this->paginate = array(
             'limit'=>8,
             'contain' => array('Album'=> array('fields'=> array('id', 'permission_id'))),
-            'fields'=>array('id', 'name', 'title', 'file_path', 'file_name', 'created', 'published'),
+            'fields'=>array('id', 'name', 'title', 'file_path', 'file_name', 'created', 'published', 'views'),
         );
         $this->set('photos', $this->paginate());
         $this->set('title_for_layout', __('Photos'));
@@ -48,7 +48,7 @@ class PhotosController extends AdminAppController{
         $this->paginate = array(
             'conditions' => $this->Photo->parseCriteria($this->passedArgs),
             'limit' => 12,
-            'fields' => array('id', 'title', 'file_name', 'file_path', 'taken'),
+            'fields' => array('id', 'title', 'file_name', 'file_path', 'taken', 'views'),
             'contain' => array('User'=>array('fields'=>array('id', 'username')),
                                'Album'=> array('fields'=> array('id', 'permission_id'))),
         );
@@ -221,7 +221,7 @@ class PhotosController extends AdminAppController{
         $photos = $this->Photo->find('all', 
             array(
                 'conditions'=>array('Photo.album_id'=>(int)$album['Album']['id']),
-                'fields'=>array('id', 'title', 'file_name', 'file_path', 'description'),
+                'fields'=>array('id', 'title', 'file_name', 'file_path', 'description', 'views', 'taken'),
             )
         );
         if(!$photos){
@@ -344,6 +344,11 @@ class PhotosController extends AdminAppController{
             throw new NotFoundException(__('Invalid photo'));
         }
         if($this->request->is('post') || $this->request->is('put')){
+            /* Clean the HTML */
+            require_once APP.'Vendor'.DS.'Htmlpurifier/HTMLPurifier.standalone.php';
+            $purifier = new HTMLPurifier();
+            $this->request->data['Photo']['description'] = $purifier->purify(nl2br($this->request->data['Photo']['description']));
+            
             if($this->Photo->save($this->request->data)){
                 $this->setFlash(__('The photo has been saved'));
                 $this->redirect(array('action' => 'index'));

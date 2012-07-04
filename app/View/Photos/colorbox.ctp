@@ -16,6 +16,7 @@
 <?php $this->Html->addCrumb(__('Colorbox')); ?>
 <?php $url = $this->X2->photoUrl(); ?>
 <?php $show_date = Configure::read('X2.Photo.Show_Photo_Date'); ?>
+<?php $show_views = Configure::read('X2.Photo.Show_Photo_Views'); ?>
 <?php
 $this->start('left');
 echo $this->element('navigation');
@@ -29,8 +30,8 @@ $this->end();
     <?php if(Configure::read('X2.Photo.Show_Photo_Sort')): ?>
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
-        <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-        <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
+        <?php echo $this->Paginator->sort('taken', __('Date Taken'), array('class' => 'btn btn-mini')); ?> 
+        <?php echo $this->Paginator->sort('views', null, array('class' => 'btn btn-mini')); ?>        
     </div>
     <?php endif; ?>
 </div>
@@ -41,7 +42,7 @@ $this->end();
     <?php endif; ?>
     <li class="span2">
         <?php
-        $title = !empty($photos[$i]['Photo']['title']) ? $photos[$i]['Photo']['title'] : $photos[$i]['Photo']['name']; 
+        $title = !empty($photos[$i]['Photo']['description']) ? $photos[$i]['Photo']['description'] : $photos[$i]['Photo']['title']; 
         $image_s_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
                 Configure::read('X2.Dir.S').'/'.$photos[$i]['Photo']['file_name']);
         $image_l_url = h($url.$photos[$i]['Photo']['file_path'].'/'.
@@ -62,6 +63,9 @@ $this->end();
                     array('controller'=>'photos', 'action'=>'view', h($photos[$i]['Photo']['id']))); ?>
             <?php if($show_date): ?>
             <p><small><?php echo $this->Time->nice(h($photos[$i]['Photo']['taken'])); ?></small></p>
+            <?php endif; ?>
+            <?php if($show_views): ?>
+            <p><small><?php echo h($photos[$i]['Photo']['views']).' '.__('views'); ?></small></p>
             <?php endif; ?>
         </div>
     </li>

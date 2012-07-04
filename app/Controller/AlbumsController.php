@@ -72,7 +72,7 @@ class AlbumsController extends AppController{
         $this->paginate = array('Photo' =>
             array(
                 'limit' => 15,
-                'fields' => array('id', 'title', 'file_path', 'file_name', 'created'),
+                'fields' => array('id', 'title', 'file_path', 'file_name', 'views', 'taken'),
             )
         );
         $album = $this->Album->find('first', array(
@@ -98,7 +98,10 @@ class AlbumsController extends AppController{
         $photos = $this->paginate('Photo', array('album_id' => $album['Album']['id'], 'Photo.published'=>true));
         $this->set('photos', $photos);
         $this->set('title_for_layout', __('Album').' :: '.h($album['Album']['name']));
-        if(Configure::read('X2.Photo.Render_Colorbox')){
+        if(isset($this->request->params['named']['t']) && $this->request->params['named']['t'] == 'embedded'){
+            $this->render();
+        }
+        elseif(Configure::read('X2.Photo.Render_Colorbox')){
             $this->render('/Photos/colorbox');
         }
         else{

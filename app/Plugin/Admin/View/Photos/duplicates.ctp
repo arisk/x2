@@ -19,8 +19,8 @@
     </div>
     <div class="span3 sorter">
         <?php echo __('Sort'); ?>:
-        <?php echo $this->Paginator->sort('created', null, array('class' => 'btn btn-mini')); ?> 
-        <?php echo $this->Paginator->sort('modified', null, array('class' => 'btn btn-mini')); ?>        
+        <?php echo $this->Paginator->sort('taken', __('Date Taken'), array('class' => 'btn btn-mini')); ?> 
+        <?php echo $this->Paginator->sort('views', null, array('class' => 'btn btn-mini')); ?>        
     </div>
 </div>
 <?php if(count($duplicates) > 0): ?>

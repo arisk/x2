@@ -1,1 +1,28 @@
-See INSTALL.txt
+X2 Gallery
+A simple, easy to use, minimalist PHP gallery
+
+1. Install 
+Follow the instructions in INSTALL.txt
+
+2. Use
+X2 is a very simple minimalist gallery. After installing go to http://example.com/x2/users/register
+and register the first user. Only the first user automatically becomes an admin and after that
+you have options to allow registration and a user approval queue. 
+In the admin section you can create albums and upload photos. 
+The upload area allows drag and drop upload and multiple file uploads.
+There are 10 themes to chose from or you can develop your own custom theme with 
+Bootstrap CSS and HTML. 
+
+3. Extend
+You can use CakePHP plugins to extend the X2's functionality in any way you like.
+
+4. Report a bug, request a feature or contribute
+Please use the issue tracker here to report and bugs or request features.
+
+5. License 
+GPL Version 2. See LICENSE.txt for more information
+
+6. Donate
+If you would like to donate to the X2 gallery project please visit the link below.
+http://deepspacehosting.com/x2
+Any contribution will be greatly appreciated.
